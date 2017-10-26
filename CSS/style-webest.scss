@@ -1,0 +1,57 @@
+.webest-bg {
+    @include wrap;
+    background: 
+        url('../IMG2/cheese-dip.png') no-repeat left top,
+        url('../IMG2/seeds.png') no-repeat left 30%,
+        url('../IMG2/tomato-slices.png') no-repeat left bottom,
+        url('../IMG2/tomato.png') no-repeat right bottom,
+        url('../IMG2/cheese-lists.png') no-repeat right bottom,
+        url('../IMG2/lettuce.png') no-repeat right center,
+        url('../IMG2/wood.png') no-repeat;
+    background-size: auto,auto,auto,auto,auto,auto, cover;
+}
+
+.webest-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__words {
+    @include gagalin(#2f3234);
+    }
+}
+
+.webest-content {
+    display: flex;
+    margin: 0px 90px;
+    justify-content: space-between;
+}
+
+.bestpoint {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+    &__img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    &__title {
+        font-family: lifehackmedium;
+        font-size: 24px;
+        color: #2f3234;
+    }
+
+    p {
+    font-family: ubuntulight;
+    font-size: 14px;
+    color: #6d6d6c
+    }
+}
+
+
+

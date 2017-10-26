@@ -20,53 +20,40 @@ a {
     text-decoration: none;
 }
 
-.greet-section {
-
-}
 
 
-.wrap {
-    position: relative;
-    min-height: 650px;
-    height: 100%;
-    width: 1100px;
-    display: block;
-    background:  url("../IMG/texture.png") no-repeat center center,
+.greet-bg {
+    @include wrap;
+    background:  url("../IMG/texture.png") repeat center center,
     black url("../IMG/video-bg.png") no-repeat center center;
-    // background-color: #000;
-    // background-image: url("../IMG/texture.png"), url("../IMG/video-bg.png") ;
-    // background-position: top right, center center;
-    // background-attachment: fixed, fixed;
-    // background-repeat: repeat, no-repeat;
-    // background-size: auto, cover;
+    background-size: auto, cover;
     display: flex;
     flex-direction: column;
+    position: relative;
+
 }
+
+
 
 .header {
     display: flex;
-    border: 1px solid white;
     align-items: center;
     justify-content: flex-end;
     height: 81px;
 
     &-left {
-        border: 1px solid white;
         margin-left: 77px;
     }
     &-middle {
         margin-left: auto;
-        border: 1px solid white;
     }
     &-right {
-        border: 1px solid white;
         margin-right: 79px;
         margin-left: 13px;
     }
 }
 
 .logo__pic {
-    display: block;
     width: 92px;
     height: 69px;
 }
@@ -133,16 +120,14 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
 
     &__image {
         background: url("../IMG/drops.png") no-repeat center center;
         width: 451px;
         height: 420px;
-        border: 1px solid white;
 
         img {
-            margin: 0 auto;
+            margin-left: 25px;
             width: 414px;
             height: 420px;
         }
@@ -154,10 +139,7 @@ a {
         width: 405px;
 
         &-gagalin {
-            font-family: gagalinregular;
-            font-size: 72px;
-            text-transform: uppercase;
-            color: #f9b43b;
+            @include gagalin(#f9b43b);
         }
 
         &-lifehack {
@@ -174,7 +156,6 @@ a {
 }
 
 .dots__list {
-    border: 1px solid yellow;
     margin-left: 30px;
 }
 
@@ -208,7 +189,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
     margin-top: 50px;
 }
 

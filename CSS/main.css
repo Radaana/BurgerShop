@@ -59,13 +59,13 @@ p {
 a {
   text-decoration: none; }
 
-.wrap {
-  position: relative;
+.greet-bg {
   min-height: 650px;
   height: 100%;
-  width: 1100px;
-  display: block;
-  background: url("../IMG/texture.png") no-repeat center center, black url("../IMG/video-bg.png") no-repeat center center;
+  min-width: 1100px;
+  width: 100%;
+  background: url("../IMG/texture.png") repeat center center, black url("../IMG/video-bg.png") no-repeat center center;
+  background-size: auto, cover;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -74,14 +74,14 @@ a {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative; }
 
 .header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid white;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -92,18 +92,14 @@ a {
   justify-content: flex-end;
   height: 81px; }
   .header-left {
-    border: 1px solid white;
     margin-left: 77px; }
   .header-middle {
-    margin-left: auto;
-    border: 1px solid white; }
+    margin-left: auto; }
   .header-right {
-    border: 1px solid white;
     margin-right: 79px;
     margin-left: 13px; }
 
 .logo__pic {
-  display: block;
   width: 92px;
   height: 69px; }
 
@@ -169,15 +165,13 @@ a {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
-  border: 1px solid white; }
+  align-items: center; }
   .greeting__image {
     background: url("../IMG/drops.png") no-repeat center center;
     width: 451px;
-    height: 420px;
-    border: 1px solid white; }
+    height: 420px; }
     .greeting__image img {
-      margin: 0 auto;
+      margin-left: 25px;
       width: 414px;
       height: 420px; }
   .greeting__words {
@@ -199,7 +193,6 @@ a {
   right: 10px; }
 
 .dots__list {
-  border: 1px solid yellow;
   margin-left: 30px; }
 
 .dots__item {
@@ -235,5 +228,73 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid white;
   margin-top: 50px; }
+
+.webest-bg {
+  min-height: 650px;
+  height: 100%;
+  min-width: 1100px;
+  width: 100%;
+  background: url("../IMG2/cheese-dip.png") no-repeat left top, url("../IMG2/seeds.png") no-repeat left 30%, url("../IMG2/tomato-slices.png") no-repeat left bottom, url("../IMG2/tomato.png") no-repeat right bottom, url("../IMG2/cheese-lists.png") no-repeat right bottom, url("../IMG2/lettuce.png") no-repeat right center, url("../IMG2/wood.png") no-repeat;
+  background-size: auto,auto,auto,auto,auto,auto, cover; }
+
+.webest-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .webest-header__words {
+    font-family: gagalinregular;
+    font-size: 72px;
+    text-transform: uppercase;
+    color: #2f3234; }
+
+.webest-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 90px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.bestpoint {
+  width: 33%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .bestpoint__img {
+    width: 100px;
+    height: 100px; }
+  .bestpoint__title {
+    font-family: lifehackmedium;
+    font-size: 24px;
+    color: #2f3234; }
+  .bestpoint p {
+    font-family: ubuntulight;
+    font-size: 14px;
+    color: #6d6d6c; }
