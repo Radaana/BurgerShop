@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    
+    li {
+        list-style: none;
+    }
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.greet-section {
+
+}
+
+
+.wrap {
+    position: relative;
+    min-height: 650px;
+    height: 100%;
+    width: 1100px;
+    display: block;
+    background:  url("../IMG/texture.png") no-repeat center center,
+    black url("../IMG/video-bg.png") no-repeat center center;
+    // background-color: #000;
+    // background-image: url("../IMG/texture.png"), url("../IMG/video-bg.png") ;
+    // background-position: top right, center center;
+    // background-attachment: fixed, fixed;
+    // background-repeat: repeat, no-repeat;
+    // background-size: auto, cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    border: 1px solid white;
+    align-items: center;
+    justify-content: flex-end;
+    height: 81px;
+
+    &-left {
+        border: 1px solid white;
+        margin-left: 77px;
+    }
+    &-middle {
+        margin-left: auto;
+        border: 1px solid white;
+    }
+    &-right {
+        border: 1px solid white;
+        margin-right: 79px;
+        margin-left: 13px;
+    }
+}
+
+.logo__pic {
+    display: block;
+    width: 92px;
+    height: 69px;
+}
+
+
+.navigation__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: ubuntumedium;
+    width: 625px;
+    text-transform: uppercase;
+}
+
+.navigation__item {
+        display: block;
+        position: relative;
+
+    a {
+        color: #ffffff;
+    }
+    
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 4px;
+        height: 4px; 
+        border-radius: 50%;
+        background-color: #ffffff;
+        top: 8px;
+        right: -18px;
+    }
+
+    &:last-child::after {
+        display: none;
+    }
+
+}
+
+.order-btn {
+    background-color: #e45028;
+    border-radius: 5px;
+    width: 100px;
+    height: 38px;
+    text-align: center;
+    padding-top: 9px;
+    text-transform: uppercase;
+    font-family: ubuntumedium;
+
+    a {
+        color: #ffffff;
+    }
+
+    &:hover {
+        background-color: #c1401e;
+    }
+}
+
+.greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+
+    &__image {
+        background: url("../IMG/drops.png") no-repeat center center;
+        width: 451px;
+        height: 420px;
+        border: 1px solid white;
+
+        img {
+            margin: 0 auto;
+            width: 414px;
+            height: 420px;
+        }
+    }
+
+    &__words {
+        color: #ffffff;
+        margin-left: 13px;
+        width: 405px;
+
+        &-gagalin {
+            font-family: gagalinregular;
+            font-size: 72px;
+            text-transform: uppercase;
+            color: #f9b43b;
+        }
+
+        &-lifehack {
+            font-family: lifehackmedium;
+            font-size: 65px;
+        }
+    }
+}
+
+.dots {
+    position: absolute;
+    top: 88px;
+    right: 10px;
+}
+
+.dots__list {
+    border: 1px solid yellow;
+    margin-left: 30px;
+}
+
+.dots__item {
+    width:9px;
+    height: 9px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    position: relative; 
+
+
+    &:first-child::after {
+        content: "";
+        background-color: transparent;
+        border: 1px solid white;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        position: absolute;
+        right: -3px;
+        top: -3px;
+    } 
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    margin-top: 50px;
+}
+
