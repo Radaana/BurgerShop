@@ -25,7 +25,8 @@ a {
 .greet-bg {
     @include wrap;
     background:  url("../IMG/texture.png") no-repeat center center,
-    black url("../IMG/video-bg.png") no-repeat center center;
+                url("../IMG/texture.png") no-repeat center center,
+                #000000 url("../IMG/video-bg.png") no-repeat center center;
     background-size: cover, cover;
     display: flex;
     flex-direction: column;
@@ -43,13 +44,16 @@ a {
 
     &-left {
         margin-left: 77px;
+        margin-top: 15px;
     }
     &-middle {
         margin-left: auto;
+        margin-top: 8px;
     }
     &-right {
         margin-right: 79px;
-        margin-left: 13px;
+        margin-left: 15px;
+        margin-top: 8px;
     }
 }
 
@@ -64,21 +68,13 @@ a {
     justify-content: space-between;
     align-items: center;
     font-family: ubuntumedium;
-    width: 625px;
+    width: 510px;
     text-transform: uppercase;
 }
 
 .navigation__item {
         display: block;
         position: relative;
-
-    a {
-        color: #ffffff;
-    }
-    
-    &:hover {
-        text-decoration: underline;
-    }
 
     &::after {
         position: absolute;
@@ -97,8 +93,20 @@ a {
 
 }
 
+.navigation__link {
+        color: #ffffff;
+        font-size: 13px;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+
 .order-btn {
     @include btn(#e45028);
+    font-size: 13px;
 
     a {
         color: #ffffff;
@@ -114,38 +122,48 @@ a {
     justify-content: center;
     align-items: center;
 
-    &__image {
-        background: url("../IMG/drops.png") no-repeat center center;
-        width: 451px;
+    &__bg {
+        background: url(../IMG/drops.png) no-repeat 45px 60px;
+        width: 500px;
         height: 420px;
+        margin-left: auto;
 
-        img {
-            margin-left: 25px;
-            width: 414px;
-            height: 420px;
-        }
     }
+
+    &__image {
+        margin-left: 82px;
+        margin-top: -6px;
+        width: 414px;
+        height: 420px;
+        }
 
     &__words {
         color: #ffffff;
-        margin-left: 13px;
-        width: 405px;
+        // margin-left: 13px;
+        width: 500px;
+        height: 420px;
+        margin-right: auto;
+        padding-left: 10px;
+        padding-top: 130px;
 
         &-gagalin {
             @include gagalin(#f9b43b);
         }
 
         &-lifehack {
-            font-family: lifehackmedium;
-            font-size: 65px;
+                font-family: lifehackmedium;
+                font-size: 65px;
+                margin-top: 15px;
+                line-height: 100%;
+                letter-spacing: -1.8px;
         }
     }
 }
 
 .dots {
     position: absolute;
-    top: 88px;
-    right: 10px;
+    top: 95px;
+    right: 55px;
 }
 
 .dots__list {
@@ -153,11 +171,11 @@ a {
 }
 
 .dots__item {
-    width:9px;
-    height: 9px;
+    width:5px;
+    height: 5px;
     background-color: #ffffff;
     border-radius: 50%;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     position: relative; 
 
 
@@ -169,8 +187,8 @@ a {
         height: 14px;
         border-radius: 50%;
         position: absolute;
-        right: -3px;
-        top: -3px;
+        right: -6px;
+        top: -5px;
     } 
 
     &:last-child {
@@ -182,6 +200,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 93px;
 }
 

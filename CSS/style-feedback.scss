@@ -34,7 +34,8 @@
 }
 
 .opinion__text {
-    margin-top: 30px;
+    margin-top: 25px;
+    line-height: 167%;
     font-family: ubuntulight;
     font-size: 14px;
 
@@ -42,7 +43,7 @@
 
 .opinion_btn {
     @include btn(#2f3234);
-    width: 113px;
+    width: 110px;
     font-size: 13px;
     padding-top: 10px;
     margin-top: 15px;
