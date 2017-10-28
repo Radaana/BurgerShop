@@ -5,11 +5,6 @@
     color: $color;
 }
 
-@mixin wrap {
-    height: 650px;
-    width: 1100px;
-
-}
 
 @mixin btn($bgcolor) {
     background-color: $bgcolor;
@@ -21,4 +16,16 @@
     padding-top: 10px;
     text-transform: uppercase;
     font-family: ubuntumedium;
+}
+
+@mixin circle($width, $color) {
+  width: $width;
+  height: $width;
+  border-radius: $width/2;
+  background-color: $color;
+}
+
+//responsive
+@function rem($px) {
+  @return $px / 16px+0rem;
 }

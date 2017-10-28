@@ -3,90 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <title>BurgerShop</title>
-    
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet"  href="CSS/main.css">
 </head>
 <body>
-    <section class="greet-section">
-        
-            <div class="greet-bg">
-                <header class="header">
-                    <div class="header-left">
-                        <div class="logo">
-                            <a href="#"><img src="IMG/logo.png" alt="Mr.Burger" title="Mr.Burger" class="logo__pic" width="92" height="69"></a>
+    <div class="wrapper">
+        <div class="maincontent">
+            <section class="section greet-section">
+                <div class="container greet-bg">
+                    <header class="header">
+                        <div class="header-left">
+                            <div class="logo">
+                                <a href="#" class="logo__link"><img src="IMG/logo.png" alt="Mr.Burger" title="Mr.Burger" class="logo__pic" width="92" height="69"></a>
+                            </div>
+                        </div>
+                        <div class="header-middle">
+                            <nav class="navigation">
+                                <ul class="navigation__list">
+                                    <li class="navigation__item">
+                                        <a href="#" class="navigation__link">О нас</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="#" class="navigation__link">Бургеры</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="#" class="navigation__link">Команда</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="#" class="navigation__link">Меню</a></li>
+                                    <li class="navigation__item" >
+                                        <a href="#" class="navigation__link">Отзывы</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="#" class="navigation__link">Контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header-right">
+                            <div class="order-btn">
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                    </header>
+                    <div  class="greeting">
+                        <div class="greeting__bg">
+                            <img class="greeting__image" src="IMG/burger.png" alt="Mr.Burger">
+                        </div>
+                        <div class="greeting__words">
+                            <div class="greeting__words-gagalin"><h2>Мы делаем </h2></div>
+                            <div class="greeting__words-lifehack"><p>натуральные  бургеры</p></div>
                         </div>
                     </div>
-                    <div class="header-middle">
-                        <nav class="navigation">
-                            <ul class="navigation__list">
-                                <li class="navigation__item">
-                                    <a href="#" class="navigation__link">О нас</a>
-                                </li>
-                                <li class="navigation__item">
-                                    <a href="#" class="navigation__link">Бургеры</a>
-                                </li>
-                                <li class="navigation__item">
-                                    <a href="#" class="navigation__link">Команда</a>
-                                </li>
-                                <li class="navigation__item">
-                                    <a href="#" class="navigation__link">Меню</a></li>
-                                <li class="navigation__item" >
-                                    <a href="#" class="navigation__link">Отзывы</a>
-                                </li>
-                                <li class="navigation__item">
-                                    <a href="#" class="navigation__link">Контакты</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="header-right">
-                        <div class="order-btn">
-                            <a href="#">Заказать</a>
+                    <aside  class="dots">
+                        <ul class="dots__list">
+                            <li class="dots__item dots__item_active"><a href="#"></a></li>
+                            <li class="dots__item"><a href="#"></a></li>
+                            <li class="dots__item"><a href="#"></a></li>
+                            <li class="dots__item"><a href="#"></a></li>
+                            <li class="dots__item"><a href="#"></a></li>
+                            <li class="dots__item"><a href="#"></a></li>
+                            <li class="dots__item"><a href="#"></a></li>
+                            <li class="dots__item"><a href="#"></a></li>
+                        </ul>
+                    </aside>
+                    <footer class="footer">
+                        <div class="arrow">
+                            <img src="IMG/arrow-scroll.png" alt="\/" class="arrow__img">
                         </div>
-                    </div>
-                </header>
-                <div  class="greeting">
-                    <div class="greeting__bg">
-                        <img class="greeting__image" src="IMG/burger.png" alt="Mr.Burger">
-                    </div>
-                    <div class="greeting__words">
-                        <div class="greeting__words-gagalin"><p>Мы делаем </p></div>
-                        <div class="greeting__words-lifehack"><p>натуральные  бургеры</p></div>
-                    </div>
+                    </footer>
                 </div>
-                <aside  class="dots">
-                    <ul class="dots__list">
-                        <li class="dots__item dots__item_active"><a href="#"></a></li>
-                        <li class="dots__item"><a href="#"></a></li>
-                        <li class="dots__item"><a href="#"></a></li>
-                        <li class="dots__item"><a href="#"></a></li>
-                        <li class="dots__item"><a href="#"></a></li>
-                        <li class="dots__item"><a href="#"></a></li>
-                        <li class="dots__item"><a href="#"></a></li>
-                        <li class="dots__item"><a href="#"></a></li>
-                    </ul>
-                </aside>
-                <footer class="footer">
-                    <div class="arrow">
-                        <img src="IMG/arrow-scroll.png" alt="\/" class="arrow__img">
-                    </div>
-                </footer>
-            </div>
-        
-    </section>
+            </section>
 
-    <section class="webest">
-
-            <div class="webest-bg">
-                <header class="webest-header">
-                    <h2 class="webest-header__words">
-                        Мы лучшие
-                    </h2>
-                </header>
-                <div class="webest-content">
-
+            <section class="section webest">
+                <div class="container webest-bg">
+                    <header class="webest-header">
+                        <h2 class="webest-header__words">
+                            Мы лучшие
+                        </h2>
+                    </header>
+                    <div class="webest-content">
                         <div class="bestpoint">
-                            <div class="bestpoint__img">
+                            <div class="bestpoint__img bestpoint__img--meat">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                      width="96.428px" height="89.246px" viewBox="0 0 96.428 89.246" enable-background="new 0 0 96.428 89.246" xml:space="preserve">
                                 <g>
@@ -304,7 +303,7 @@
                             <div class="bestpoint__text"><p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p></div>
                         </div>
                         <div class="bestpoint">
-                            <div class="bestpoint__img">
+                            <div class="bestpoint__img bestpoint__img--hand">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                  width="73px" height="85.875px" viewBox="0 0 73 85.875" enable-background="new 0 0 73 85.875" xml:space="preserve">
                                 <g>
@@ -1291,7 +1290,7 @@
                             <div class="bestpoint__text"><p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p></div>
                         </div>
                         <div class="bestpoint">
-                            <div class="bestpoint__img">
+                            <div class="bestpoint__img bestpoint__img--natural">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                      width="88px" height="75.534px" viewBox="0 0 88 75.534" enable-background="new 0 0 88 75.534" xml:space="preserve">
                                 <g>
@@ -1499,101 +1498,100 @@
                             ингредиенты</h4>
                             <div class="bestpoint__text"><p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p></div>
                         </div>
+                    </div>
                 </div>
-            </div>
-            
-        </div>
-    </section>
+            </section>
 
-    <section class="feedbacks">
-        <div class="opinion-container">
-            <div class="opinion">
-                <div class="opinion__img">
-                    <img src="IMG6/1.png" alt="Фото">
-                    <div class="opinion__content">
-                        <div class="opinion__title"></div>
-                        <div class="opinion__text"></div>
-                        <div class="btn"></div>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="opinion">
-                <div class="opinion__img">
-                    <img src="IMG6/2.png" alt="Фото">
-                    <div class="opinion__content">
-                        <div class="opinion__title">
-                            <p>Константин Спилберг</p>
+            <section class="section feedbacks">
+                <div class="container opinion-container">
+                    <div class="opinion">
+                        <div class="opinion__img">
+                            <img src="IMG6/1.png" alt="Фото">
+                            <div class="opinion__content">
+                                <div class="opinion__title"></div>
+                                <div class="opinion__text"></div>
+                                <div class="btn"></div>
+                            </div>
+                            
                         </div>
-                        <div class="opinion__text">
-                            <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                    </div>
+                    <div class="opinion">
+                        <div class="opinion__img">
+                            <img src="IMG6/2.png" alt="Фото">
+                            <div class="opinion__content">
+                                <div class="opinion__title">
+                                    <p>Константин Спилберг</p>
+                                </div>
+                                <div class="opinion__text">
+                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                                </div>
+                                <div class="opinion_btn">Подробнее</div>
+                            </div>
                         </div>
-                        <div class="opinion_btn">Подробнее</div>
+                    </div>
+                    <div class="opinion">
+                        <div class="opinion__img">
+                            <img src="IMG6/3.png" alt="Фото">
+                        </div>
+                        <div class="opinion__content">
+                            <div class="opinion__title"></div>
+                            <div class="opinion__text"></div>
+                            <div class="btn"></div>
+                        </div>
+                    </div>
+                    <div class="opinion">
+                        <div class="opinion__img">
+                            <img src="IMG6/4.png" alt="Фото">
+                        </div>
+                        <div class="opinion__content">
+                            <div class="opinion__title"></div>
+                            <div class="opinion__text"></div>
+                            <div class="btn"></div>
+                        </div>
+                    </div>
+                    <div class="opinion">
+                        <div class="opinion__img">
+                            <img src="IMG6/5.png" alt="Фото">
+                        </div>
+                        <div class="opinion__content">
+                            <div class="opinion__title"></div>
+                            <div class="opinion__text"></div>
+                            <div class="btn"></div>
+                        </div>
+                    </div>
+                    <div class="opinion">
+                        <div class="opinion__img">
+                            <img src="IMG6/6.png" alt="Фото">
+                        </div>
+                        <div class="opinion__content">
+                            <div class="opinion__title"></div>
+                            <div class="opinion__text"></div>
+                            <div class="btn"></div>
+                        </div>
+                    </div>
+                    <div class="opinion">
+                        <div class="opinion__img">
+                            <img src="IMG6/7.png" alt="Фото">
+                        </div>
+                        <div class="opinion__content">
+                            <div class="opinion__title"></div>
+                            <div class="opinion__text"></div>
+                            <div class="btn"></div>
+                        </div>
+                    </div>
+                    <div class="opinion">
+                        <div class="opinion__img">
+                            <img src="IMG6/8.png" alt="Фото">
+                        </div>
+                        <div class="opinion__content">
+                            <div class="opinion__title"></div>
+                            <div class="opinion__text"></div>
+                            <div class="btn"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="opinion">
-                <div class="opinion__img">
-                    <img src="IMG6/3.png" alt="Фото">
-                </div>
-                <div class="opinion__content">
-                    <div class="opinion__title"></div>
-                    <div class="opinion__text"></div>
-                    <div class="btn"></div>
-                </div>
-            </div>
-            <div class="opinion">
-                <div class="opinion__img">
-                    <img src="IMG6/4.png" alt="Фото">
-                </div>
-                <div class="opinion__content">
-                    <div class="opinion__title"></div>
-                    <div class="opinion__text"></div>
-                    <div class="btn"></div>
-                </div>
-            </div>
-            <div class="opinion">
-                <div class="opinion__img">
-                    <img src="IMG6/5.png" alt="Фото">
-                </div>
-                <div class="opinion__content">
-                    <div class="opinion__title"></div>
-                    <div class="opinion__text"></div>
-                    <div class="btn"></div>
-                </div>
-            </div>
-            <div class="opinion">
-                <div class="opinion__img">
-                    <img src="IMG6/6.png" alt="Фото">
-                </div>
-                <div class="opinion__content">
-                    <div class="opinion__title"></div>
-                    <div class="opinion__text"></div>
-                    <div class="btn"></div>
-                </div>
-            </div>
-            <div class="opinion">
-                <div class="opinion__img">
-                    <img src="IMG6/7.png" alt="Фото">
-                </div>
-                <div class="opinion__content">
-                    <div class="opinion__title"></div>
-                    <div class="opinion__text"></div>
-                    <div class="btn"></div>
-                </div>
-            </div>
-            <div class="opinion">
-                <div class="opinion__img">
-                    <img src="IMG6/8.png" alt="Фото">
-                </div>
-                <div class="opinion__content">
-                    <div class="opinion__title"></div>
-                    <div class="opinion__text"></div>
-                    <div class="btn"></div>
-                </div>
-            </div>
+            </section>
         </div>
-        
-    </section>
+    </div>
 </body>
 </html>

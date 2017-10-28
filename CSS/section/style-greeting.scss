@@ -1,59 +1,32 @@
-* {
-    box-sizing: border-box;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    
-    li {
-        list-style: none;
-    }
-}
-
-p {
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-
-
 .greet-bg {
-    @include wrap;
     background:  url("../IMG/texture.png") no-repeat center center,
                 url("../IMG/texture.png") no-repeat center center,
                 #000000 url("../IMG/video-bg.png") no-repeat center center;
     background-size: cover, cover;
-    display: flex;
-    flex-direction: column;
     position: relative;
-
+    height: 100%;
+    width: 100%;
 }
-
-
 
 .header {
     display: flex;
+    width: 100%;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     height: 81px;
 
     &-left {
         margin-left: 77px;
-        margin-top: 15px;
+        margin-top: 13px;
+        margin-right: auto;
     }
     &-middle {
-        margin-left: auto;
-        margin-top: 8px;
+        margin-top: 10px;
+        margin-right: 12px;
     }
     &-right {
         margin-right: 79px;
-        margin-left: 15px;
-        margin-top: 8px;
+        margin-top: 13px;
     }
 }
 
@@ -62,47 +35,37 @@ a {
     height: 69px;
 }
 
-
-.navigation__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: ubuntumedium;
-    width: 510px;
-    text-transform: uppercase;
-}
-
 .navigation__item {
-        display: block;
-        position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
 
-    &::after {
-        position: absolute;
-        content: "";
-        width: 4px;
-        height: 4px; 
-        border-radius: 50%;
-        background-color: #ffffff;
-        top: 8px;
-        right: -18px;
+    &:after {
+        display: inline-block;
+        vertical-align: middle;
+        content: ' ';
+        @include circle(5px, #ffffff);
+        margin: 0 12px;
     }
 
-    &:last-child::after {
+    &:last-child:after {
         display: none;
     }
-
 }
 
 .navigation__link {
         color: #ffffff;
         font-size: 13px;
-    
+        font-family: ubuntumedium;
+        text-transform: uppercase;
+        display: inline-block;
+        vertical-align: middle;
+        transition: .5s;
+
     &:hover {
         text-decoration: underline;
     }
 }
-
-
 
 .order-btn {
     @include btn(#e45028);
@@ -121,49 +84,64 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding-bottom: 15%;
 
     &__bg {
-        background: url(../IMG/drops.png) no-repeat 45px 60px;
+        background: url(../IMG/drops.png) no-repeat 100px 69px;
         width: 500px;
         height: 420px;
         margin-left: auto;
-
+        flex-basis: 50%;
+        display: flex;
     }
 
     &__image {
-        margin-left: 82px;
-        margin-top: -6px;
+        margin-left: 135px;
+        margin-top: 3px;
         width: 414px;
         height: 420px;
         }
 
     &__words {
         color: #ffffff;
-        // margin-left: 13px;
         width: 500px;
         height: 420px;
         margin-right: auto;
         padding-left: 10px;
         padding-top: 130px;
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         &-gagalin {
-            @include gagalin(#f9b43b);
-        }
 
+            h2 {
+                @include gagalin(#f9b43b);
+                font-weight: 400;
+                margin: 0;
+                padding-top: 60px;
+                line-height: 0;
+            }
+        }
         &-lifehack {
                 font-family: lifehackmedium;
                 font-size: 65px;
-                margin-top: 15px;
-                line-height: 100%;
+                line-height: 0.97;
                 letter-spacing: -1.8px;
+                font-weight: 500;
+                line-height: 1;
         }
     }
 }
 
 .dots {
     position: absolute;
-    top: 95px;
-    right: 55px;
+    top: 98px;
+    right: 50px;
 }
 
 .dots__list {
@@ -171,10 +149,7 @@ a {
 }
 
 .dots__item {
-    width:5px;
-    height: 5px;
-    background-color: #ffffff;
-    border-radius: 50%;
+    @include circle(5px, #ffffff);
     margin-bottom: 16px;
     position: relative; 
 
@@ -187,19 +162,18 @@ a {
         height: 14px;
         border-radius: 50%;
         position: absolute;
-        right: -6px;
+        right: -4px;
         top: -5px;
     } 
-
-    &:last-child {
-        margin-bottom: 0px;
-    }
 }
 
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 93px;
+    margin-top: 0px;
+    position: absolute;
+    bottom: 33px;
+    right: 50%;
 }
 

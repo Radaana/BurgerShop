@@ -1,6 +1,4 @@
 .webest-bg {
-    @include wrap;
-
 background: url(../IMG2/cheese-dip.png) no-repeat left 25px, 
             url(../IMG2/seeds.png) no-repeat left 190px, 
             url(../IMG2/tomato-slices.png) no-repeat 56px bottom, 
@@ -9,16 +7,21 @@ background: url(../IMG2/cheese-dip.png) no-repeat left 25px,
             url(../IMG2/lettuce.png) no-repeat right 53px, 
             url(../IMG2/wood.png) no-repeat;
     background-size: auto,auto,auto,auto,auto,auto, cover;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
 }
 
 .webest-header {
     display: flex;
-    justify-content: center;
     align-items: center;
 
     &__words {
     @include gagalin(#2f3234);
-    padding-top: 4px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: rem(60px);
+    margin-top: rem(55px);
     }
 }
 
@@ -27,27 +30,41 @@ background: url(../IMG2/cheese-dip.png) no-repeat left 25px,
     margin: 0px 90px;
     justify-content: space-between;
     align-items: baseline;
+    justify-content: flex-start;
 }
 
 .bestpoint {
-    width: 33%;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-    margin-left: 25px;
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    margin-left: 40px;
 
     &:first-child {
-        margin-left: none;
+        margin-left: 0px;
     }
 
     
     &__img {
-        width: 100px;
-        height: 100px;
-        margin: 0 auto;
+        margin: 0 auto 20px;
+
+        &--meat {
+            width: 97px;
+            height: 89px;
+        }
+
+        &--hand {
+            width: 73px;
+            height: 85px;
+        }
+
+        &--natural {
+            width: 88px;
+            height: 75px;
+        }
     }
-    
+
     &__title {
         font-family: lifehackmedium;
         font-size: 24px;
@@ -57,7 +74,8 @@ background: url(../IMG2/cheese-dip.png) no-repeat left 25px,
 
     &__text {
         margin: 0 auto;
-    
+        text-align: center;
+
     p { 
         font-family: ubuntulight;
         font-size: 14px;
