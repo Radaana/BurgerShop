@@ -278,42 +278,32 @@ a {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline; }
 
 .bestpoint {
   width: 33%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
   margin-left: 25px; }
   .bestpoint:first-child {
     margin-left: none; }
   .bestpoint__img {
     width: 100px;
-    height: 100px; }
+    height: 100px;
+    margin: 0 auto; }
   .bestpoint__title {
     font-family: lifehackmedium;
     font-size: 24px;
     color: #2f3234;
-    margin-top: 0; }
-  .bestpoint__text p {
-    font-family: ubuntulight;
-    font-size: 14px;
-    color: #6d6d6c; }
+    margin: 0 auto; }
+  .bestpoint__text {
+    margin: 0 auto; }
+    .bestpoint__text p {
+      font-family: ubuntulight;
+      font-size: 14px;
+      color: #6d6d6c; }
 
 .feedbacks {
   background-color: #000000;

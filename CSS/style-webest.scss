@@ -26,14 +26,15 @@ background: url(../IMG2/cheese-dip.png) no-repeat left 25px,
     display: flex;
     margin: 0px 90px;
     justify-content: space-between;
+    align-items: baseline;
 }
 
 .bestpoint {
     width: 33%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
     margin-left: 25px;
 
     &:first-child {
@@ -44,16 +45,18 @@ background: url(../IMG2/cheese-dip.png) no-repeat left 25px,
     &__img {
         width: 100px;
         height: 100px;
+        margin: 0 auto;
     }
     
     &__title {
         font-family: lifehackmedium;
         font-size: 24px;
         color: #2f3234;
-        margin-top: 0;
+        margin: 0 auto;
     }
 
     &__text {
+        margin: 0 auto;
     
     p { 
         font-family: ubuntulight;
