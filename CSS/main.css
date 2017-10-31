@@ -396,13 +396,16 @@ a {
     margin: 0 auto 20px; }
     .bestpoint__img_meat {
       width: 97px;
-      height: 89px; }
+      height: 89px;
+      fill: #e25028; }
     .bestpoint__img_hand {
       width: 73px;
-      height: 85px; }
+      height: 85px;
+      fill: #f8b43a; }
     .bestpoint__img_natural {
       width: 88px;
-      height: 75px; }
+      height: 75px;
+      fill: #8ac03e; }
   .bestpoint__title {
     font-family: lifehackmedium;
     font-size: 24px;
@@ -507,10 +510,129 @@ a {
   -ms-transform: scale(1, -1);
   transform: scale(1, -1); }
 
+.teammates__trigger_active .teammates__name {
+  color: #f9b43b; }
+
 .teammates__trigger_active + .teammates__desc {
   height: 23%;
   min-height: 150px;
   overflow: visible; }
+
+.menu-bg {
+  background: #000000 url("../IMG5/menu-bg.png") no-repeat 35% center;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  color: #ffffff; }
+
+.menu__head {
+  position: absolute;
+  top: 112px;
+  left: 95px; }
+
+.menu__title {
+  font-family: gagalinregular;
+  font-size: 72px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  font-weight: 400; }
+
+.menu__accordeon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 40%; }
+
+.menu__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  min-height: 650px;
+  height: 100%;
+  border: 1px solid yellow; }
+
+.menu__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.menu__namebg {
+  height: 100%;
+  min-height: 650px;
+  width: 83px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .menu__namebg_meateaters {
+    background: #000000 url("../IMG5/meateaters.png") no-repeat center center;
+    background-size: cover; }
+  .menu__namebg_vegans {
+    background: #000000 url("../IMG5/vegans.png") no-repeat center center;
+    background-size: cover; }
+  .menu__namebg_diet {
+    background: #000000 url("../IMG5/diet.png") no-repeat center center;
+    background-size: cover; }
+
+.menu__name {
+  display: block;
+  margin: 0;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  font-family: gagalinregular;
+  font-size: 40px;
+  font-weight: 400;
+  color: #ffffff;
+  width: 350px;
+  height: 83px;
+  line-height: 1;
+  padding-top: 25px;
+  text-align: center; }
+
+.menu__desc {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: ubuntulight;
+  width: 0px;
+  overflow: hidden; }
+
+.menu__trigger_active .menu__name {
+  color: #ffffff; }
+
+.menu__trigger_active + .menu__desc {
+  width: auto;
+  padding: 60px 35px; }
 
 .feedbacks {
   background-color: #000000; }
@@ -644,3 +766,53 @@ a {
   margin-top: 15px; }
   .opinion_btn:hover {
     background-color: #1f2122; }
+
+.map-bg {
+  background: #000000 url("../IMG8/map-bg.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  color: #ffffff; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #0f0f0f;
+  padding: 10px 20px; }
+  .footer__left {
+    width: 50%;
+    text-align: left; }
+  .footer__right {
+    width: 50%;
+    text-align: right; }
+
+.address__place {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: ubuntulight;
+  font-style: normal; }
+
+.address__phone {
+  color: #e45028;
+  font-style: normal; }
+  .address__phone:before {
+    content: "";
+    display: inline-block;
+    height: 12px;
+    width: 11px;
+    background: url("../IMG8/phone.svg") no-repeat center center;
+    fill: #e45028;
+    margin-right: 5px; }
+
+.socials {
+  margin-right: 80px; }
+  .socials__item {
+    fill: #ffffff;
+    opacity: 0.3;
+    margin-left: 20px; }
+    .socials__item:hover {
+      opacity: 1; }

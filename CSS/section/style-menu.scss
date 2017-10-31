@@ -1,0 +1,101 @@
+.menu-bg {
+    background: #000000 url("../IMG5/menu-bg.png") no-repeat 35% center;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+}
+
+.menu__head {
+    position: absolute;
+    top: 112px;
+    left: 95px;
+}
+
+.menu__title {
+    @include gagalin(#ffffff);
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+.menu__accordeon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 40%;
+
+}
+
+.menu__list {
+    display: flex;
+    justify-content: flex-end;
+    min-height: 650px;
+    height: 100%;
+    border: 1px solid yellow;
+}
+
+.menu__item {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.menu__namebg {
+    height: 100%;
+    min-height: 650px;
+    width: 83px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    
+    @each $namebg in meateaters, vegans, diet {
+        &_#{$namebg} {
+            background:#000000 url('../IMG5/#{$namebg}.png') no-repeat center center;
+            background-size: cover;
+            }
+        }
+}
+
+.menu__name {
+    display: block;
+    margin: 0;
+    transform: rotate(-90deg);
+    font-family: gagalinregular;
+    font-size: 40px;
+    font-weight: 400;
+    color: #ffffff;
+    width: 350px;
+    height: 83px;
+    line-height: 1;
+    padding-top: 25px;
+    text-align: center;
+    // width: 83px;
+    // height: 650px;
+    // padding-right: 50px;
+}
+
+.menu__desc {
+    background-color: rgba(#000000, 0.5);
+    padding: 0;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: ubuntulight;
+    width: 0px;
+    overflow: hidden;
+}
+
+.menu__trigger_active {
+    .menu__name {
+        color: #ffffff;
+    }
+
+    + .menu__desc {
+        width: auto;
+        padding: 60px 35px;
+    }
+}

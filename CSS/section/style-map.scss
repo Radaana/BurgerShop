@@ -1,0 +1,67 @@
+.map-bg {
+    background: #000000 url("../IMG8/map-bg.png") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+}
+
+.footer {
+    position: absolute;
+    // top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #0f0f0f;
+    padding: 10px 20px;
+
+    &__left {
+        width: 50%;
+        text-align: left;
+    }
+
+    &__right {
+        width: 50%;
+        text-align: right;
+    }
+}
+
+.address__place {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: ubuntulight;
+    font-style: normal;
+}
+
+
+.address__phone {
+    color: #e45028;
+    font-style: normal;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        height: 12px;
+        width: 11px;
+        background: url('../IMG8/phone.svg') no-repeat center center;
+        fill: #e45028;
+        margin-right: 5px;
+    }
+}
+
+.socials {
+    margin-right: 80px;
+
+    &__item {
+        fill: #ffffff;
+        opacity: 0.3;
+        margin-left: 20px;
+        
+        &:hover {
+            opacity: 1;
+        }
+
+    }
+}
