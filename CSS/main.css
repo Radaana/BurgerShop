@@ -767,6 +767,90 @@ a {
   .opinion_btn:hover {
     background-color: #1f2122; }
 
+.order-bg {
+  background: url("../IMG7/order-texture.png") no-repeat center center, #000000 url("../IMG7/order-bg.png") no-repeat center center;
+  background-size: cover, cover;
+  height: 100%;
+  width: 100%; }
+
+.order__title {
+  font-family: gagalinregular;
+  font-size: 72px;
+  text-transform: uppercase;
+  color: #f9b43b;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 3.75rem; }
+
+.orderform {
+  width: 86%;
+  min-width: 950px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+  font-family: ubuntulight;
+  font-size: 14px; }
+  .orderform__left {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border: 1px solid yellow;
+    width: 50%;
+    margin-right: 20px; }
+  .orderform__right {
+    border: 1px solid yellow;
+    width: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap; }
+
+.orderform__item {
+  width: 100%; }
+  .orderform__item_half {
+    min-width: 220px;
+    width: 45%; }
+  .orderform__item_quarter {
+    min-width: 100px;
+    width: 18%;
+    margin-right: 20px; }
+  .orderform__item_quarter:last-child {
+    margin-right: 0; }
+
+.orderform__field {
+  width: 100%;
+  min-width: 100px;
+  height: 35px;
+  border-radius: 5px; }
+
+.orderform__textarea {
+  width: 100%;
+  min-width: 460px;
+  min-height: 110px;
+  height: 45%;
+  border-radius: 5px; }
+
+.orderform__radio:checked {
+  background-color: #f9b43b; }
+
 .map-bg {
   background: #000000 url("../IMG8/map-bg.png") no-repeat center center;
   background-size: cover;

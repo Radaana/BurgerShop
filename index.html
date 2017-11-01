@@ -328,34 +328,89 @@
                     </div>
                 </div>
             </section>
+
+            <section class="order section">
+                <div class="order-bg container">
+                    <h2 class="order__title"> Закажите доставку</h2>
+                    <form action="order.php" method="post" class="orderform">
+                        <div class="orderform__left">
+                            <div class="orderform__item orderform__item_half">
+                                <label for="fullname">Имя</label>
+                                <input type="text" name="fullname" id="fullname" class="orderform__field">
+                            </div>
+                            <div class="orderform__item orderform__item_half">
+                                <label for="phone">Телефон</label>
+                                <input type="text" name="phone" id="phone" class="orderform__field">
+                            </div>
+                            <div class="orderform__item ">
+                                <label for="street">Улица</label>
+                                <input type="text" name="street" id="street" class="orderform__field">
+                            </div>
+                            <div class="orderform__item orderform__item_quarter">
+                                <label for="housenum">Дом</label>
+                                <input type="text" name="housenum" id="housenum" class="orderform__field">
+                            </div>
+                            <div class="orderform__item orderform__item_quarter">
+                                <label for="building">Корпус</label>
+                                <input type="text" name="building" id="building" class="orderform__field">
+                            </div>
+                            <div class="orderform__item orderform__item_quarter">
+                                <label for="flatnum">Квартира</label>
+                                <input type="text" name="flatnum" id="flatnum" class="orderform__field">
+                            </div>
+                            <div class="orderform__item orderform__item_quarter">
+                                <label for="floor">Этаж</label>
+                                <input type="text" name="floor" id="floor" class="orderform__field">
+                            </div>
+                        </div>
+                        <div class="orderform__right">
+                            <div class="orderform__item">
+                                <label for="message">Комментарий</label>
+                                <textarea name="message" id="message" class="orderform__textarea"></textarea>
+                            </div>
+                            <div class="orderform__item">
+                                <input type="radio" name="payment" value="change" class="orderform__radio"><span>Потребуется сдача</span>
+                                <input type="radio" name="payment" value="card" class="orderform__radio"><span>Оплата по карте</span>
+                            </div>
+                            <div class="orderform__item">
+                                <label>
+                                <input type="checkbox" name="callback" checked class="orderform__radio">
+                                Не перезванивать
+                                </label>
+                            </div>
+                        
+                            
+                        </div>
+                    </form>
+                </div>
+            </section>
+
             <section class="section map">
                 <div class="container map-bg">
-                    
-                
-                <footer class="footer">
-                    <div class="footer__left">
-                        <address class="address">
-                            <span class="address__place">Санкт-Петербург, ул.Бабушкина, д.12/1, 15 </span><br>
-                            <span class="address__phone">+7 (812) 377-13-77</span>
-                        </address>
-                    </div>
-                    <div class="footer__right">
-                        <div class="socials">
-                            <a href="#" class="socials__link"><svg  width="23px" height="13px" class="socials__item">
-                                    <use xlink:href="CSS/sprite/sprite.svg#vk"/>
-                            </svg></a>
-                            <a href="#" class="socials__link"><svg  width="20px" height="20px" class="socials__item">
-                                    <use xlink:href="CSS/sprite/sprite.svg#fb"/>
-                            </svg></a>
-                            <a href="#" class="socials__link"><svg  width="20px" height="20px" class="socials__item">
-                                    <use xlink:href="CSS/sprite/sprite.svg#twitter"/>
-                            </svg></a>
-                            <a href="#" class="socials__link"><svg  width="20px" height="16px" class="socials__item">
-                                    <use xlink:href="CSS/sprite/sprite.svg#inst"/>
-                            </svg></a>
+                    <footer class="footer">
+                        <div class="footer__left">
+                            <address class="address">
+                                <span class="address__place">Санкт-Петербург, ул.Бабушкина, д.12/1, 15 </span><br>
+                                <span class="address__phone">+7 (812) 377-13-77</span>
+                            </address>
                         </div>
-                    </div>
-                </footer>
+                        <div class="footer__right">
+                            <div class="socials">
+                                <a href="#" class="socials__link"><svg  width="23px" height="13px" class="socials__item">
+                                        <use xlink:href="CSS/sprite/sprite.svg#vk"/>
+                                </svg></a>
+                                <a href="#" class="socials__link"><svg  width="20px" height="20px" class="socials__item">
+                                        <use xlink:href="CSS/sprite/sprite.svg#fb"/>
+                                </svg></a>
+                                <a href="#" class="socials__link"><svg  width="20px" height="20px" class="socials__item">
+                                        <use xlink:href="CSS/sprite/sprite.svg#twitter"/>
+                                </svg></a>
+                                <a href="#" class="socials__link"><svg  width="20px" height="16px" class="socials__item">
+                                        <use xlink:href="CSS/sprite/sprite.svg#inst"/>
+                                </svg></a>
+                            </div>
+                        </div>
+                    </footer>
                 </div>
             </section>
         </div>

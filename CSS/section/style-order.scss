@@ -1,0 +1,82 @@
+.order-bg {
+    background:  url("../IMG7/order-texture.png") no-repeat center center,
+                #000000 url("../IMG7/order-bg.png") no-repeat center center;
+    background-size: cover, cover;
+    // position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.order__title {
+    @include gagalin(#f9b43b);
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    margin-bottom: rem(60px);
+    // margin-top: rem(55px);
+}
+
+.orderform {
+    width: 86%;
+    min-width: 950px;
+    display: flex;
+    color: #ffffff;
+    font-family: ubuntulight;
+    font-size: 14px;
+
+    &__left {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        border: 1px solid yellow;
+        width: 50%;
+        margin-right: 20px;
+    } 
+
+    &__right {
+        border: 1px solid yellow;
+        width: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+}
+
+.orderform__item {
+    width: 100%;
+
+
+    &_half {
+        min-width: 220px;
+        width: 45%;
+    }
+
+    &_quarter {
+        min-width: 100px;
+        width: 18%;
+        margin-right: 20px;
+    }
+
+    &_quarter:last-child {
+        margin-right: 0;
+    }
+}
+
+.orderform__field {
+    width: 100%;
+    min-width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    }
+
+.orderform__textarea {
+    width: 100%;
+    min-width: 460px;
+    min-height: 110px;
+    height: 45%;
+    border-radius: 5px;
+}
+
+.orderform__radio:checked {
+    background-color: #f9b43b;
+    
+}
