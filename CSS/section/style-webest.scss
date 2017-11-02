@@ -44,47 +44,55 @@ background: url(../IMG2/cheese-dip.png) no-repeat left 25px,
     &:first-child {
         margin-left: 0px;
     }
+}
 
     
-    &__img {
+.bestpoint__img {
         margin: 0 auto 20px;
 
         &_meat {
-            width: 97px;
-            height: 89px;
-            fill: #e25028;
+        width: 97px;
+        height: 89px;
+        fill: #e25028;
         }
 
         &_hand {
-            width: 73px;
-            height: 85px;
-            fill: #f8b43a;
+        width: 73px;
+        height: 85px;
+        fill: #f8b43a;
         }
 
         &_natural {
-            width: 88px;
-            height: 75px;
-            fill: #8ac03e;
+        width: 88px;
+        height: 75px;
+        fill: #8ac03e;
         }
-    }
+}
 
-    &__title {
+.bestpoint__icon {
+    width: 100%;
+    height: 100%;
+}
+
+.bestpoint__content {
+    text-align: center;
+}
+
+.bestpoint__title {
         font-family: lifehackmedium;
         font-size: 24px;
         color: #2f3234;
-        margin: 0 auto;
-    }
 
-    &__text {
-        margin: 0 auto;
-        text-align: center;
+}
+
+.bestpoint__text {
 
     p { 
         font-family: ubuntulight;
         font-size: 14px;
         color: #6d6d6c
         }
-    }
 }
+
 
 

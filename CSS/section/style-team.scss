@@ -32,28 +32,43 @@
     font-weight: 400;
     margin: 0;
     vertical-align: middle;
+
     // margin-top: 90px;
     // padding-left: 80px;
 }
 
-.teammates__heading {
-    min-height: 45px;
-    display: flex;
-    align-items: center;
-}
+// .teammates__heading {
+//     min-height: 45px;
+//     display: flex;
+//     align-items: center;
+// }
 
-.teammates__icon {
-    margin-right: 10px;
-    height: 9px;
-    width: 12px;
-}
+// // .teammates__icon {
+// //     margin-right: 10px;
+// //     height: 9px;
+// //     width: 12px;
+// // }
 
 .teammates__name {
     margin: 0;
     display: inline-block;
     font-family: gagalinregular;
     font-size: 14px;
+    font-weight: 400;
     color: #ffffff;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+
+    &:before {
+        content: "";
+        height: 0;
+        width: 0;
+        border: 4.5px solid transparent;
+        border-top-color: #f9b43b;
+        border-bottom-width: 0px;
+        margin-right: 9px;
+    }
 }
 
 .teammates__desc{

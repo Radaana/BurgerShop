@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>BurgerShop</title>
-        <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <link rel="stylesheet"  href="CSS/main.css">
     <script src="Scripts/svg4everybody.js"></script>
   <script>
     svg4everybody();
   </script>
 </head>
+
 <body>
     <div class="wrapper">
         <div class="maincontent">
+
             <section class="section greet-section">
                 <div class="container greet-bg">
                     <header class="header">
@@ -60,23 +62,12 @@
                             <div class="greeting__words-lifehack"><p>натуральные  бургеры</p></div>
                         </div>
                     </div>
-                    <aside  class="dots">
-                        <ul class="dots__list">
-                            <li class="dots__item dots__item_active"><a href="#"></a></li>
-                            <li class="dots__item"><a href="#"></a></li>
-                            <li class="dots__item"><a href="#"></a></li>
-                            <li class="dots__item"><a href="#"></a></li>
-                            <li class="dots__item"><a href="#"></a></li>
-                            <li class="dots__item"><a href="#"></a></li>
-                            <li class="dots__item"><a href="#"></a></li>
-                            <li class="dots__item"><a href="#"></a></li>
-                        </ul>
-                    </aside>
-                    <footer class="footer">
+
+                    <div class="arrowbox">
                         <div class="arrow">
-                            <img src="IMG/arrow-scroll.png" alt="\/" class="arrow__img">
+                            <a href="#" class="arrow__link"><img src="IMG/arrow-scroll.png" alt="\/" class="arrow__img"></a>
                         </div>
-                    </footer>
+                    </div>
                 </div>
             </section>
 
@@ -87,39 +78,43 @@
                             Мы лучшие
                         </h2>
                     </header>
-                    <div class="webest-content">
-                        <div class="bestpoint">
+                    <ul class="webest-content">
+                        <li class="bestpoint">
                             <div class="bestpoint__img bestpoint__img_meat">
-                                <svg  width="96.428px" height="89.246px">
+                                <svg class="bestpoint__icon">
                                     <use xlink:href="CSS/sprite/sprite.svg#meat"/>
                                 </svg>
-
                             </div>
-                            <h4 class="bestpoint__title">100% свежее мясо</h4>
-                            <div class="bestpoint__text"><p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p></div>
-                        </div>
-                        <div class="bestpoint">
+                            <div class="bestpoint__content">
+                                <h4 class="bestpoint__title">100% свежее мясо</h4>
+                                <div class="bestpoint__text"><p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p></div>
+                            </div>
+                        </li>
+                        <li class="bestpoint">
                             <div class="bestpoint__img bestpoint__img_hand">
-                                <svg  width="73px" height="85.875px">
+                                <svg class="bestpoint__icon">
                                     <use xlink:href="CSS/sprite/sprite.svg#hand"/>
                                 </svg>
-                                
                             </div>
-                            <h4 class="bestpoint__title">Ручная  сборка</h4>
-                            <div class="bestpoint__text"><p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p></div>
-                        </div>
-                        <div class="bestpoint">
+                            <div class="bestpoint__content">
+                                <h4 class="bestpoint__title">Ручная  сборка</h4>
+                                <div class="bestpoint__text"><p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p></div>
+                            </div>
+                        </li>
+                        <li class="bestpoint">
                             <div class="bestpoint__img bestpoint__img_natural"> 
-                                <svg  width="73px" height="85.875px">
+                                <svg class="bestpoint__icon">
                                     <use xlink:href="CSS/sprite/sprite.svg#natural"/>
                                 </svg>
                                 
                             </div>
-                            <h4 class="bestpoint__title">Натуральные <br>
-                            ингредиенты</h4>
-                            <div class="bestpoint__text"><p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p></div>
-                        </div>
-                    </div>
+                            <div class="bestpoint__content">
+                                <h4 class="bestpoint__title">Натуральные <br>
+                                ингредиенты</h4>
+                                <div class="bestpoint__text"><p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p></div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
@@ -132,10 +127,7 @@
                                 <ul class="teammates__list">
                                     <li class="teammates__item">
                                         <a href="#" class="teammates__trigger">
-                                            <div class="teammates__heading">
-                                                <img src="IMG4/polygon-1.svg" alt="\/" class="teammates__icon">
-                                                <h5 class="teammates__name">Дэниэл Редклиф</h5>
-                                            </div>
+                                            <h5 class="teammates__name">Дэниэл Редклиф</h5>
                                         </a>
                                         <div class="teammates__desc">
                                             <img src="IMG4/teampic.png" alt="Ричард Джеймс" class="teammates__foto">
@@ -147,10 +139,7 @@
                                     </li>
                                     <li>
                                         <a href="#" class="teammates__trigger teammates__trigger_active">
-                                            <div class="teammates__heading">
-                                                <img src="IMG4/polygon-1.svg" alt="\/" class="teammates__icon">
-                                                <h5 class="teammates__name">Ричард Джеймс</h5>
-                                            </div>
+                                            <h5 class="teammates__name">Ричард Джеймс</h5>
                                         </a>
                                         <div class="teammates__desc">
                                             <img src="IMG4/teampic.png" alt="Ричард Джеймс" class="teammates__foto">
@@ -162,10 +151,7 @@
                                     </li>
                                     <li>
                                         <a href="#" class="teammates__trigger">
-                                            <div class="teammates__heading">
-                                                <img src="IMG4/polygon-1.svg" alt="\/" class="teammates__icon">
-                                                <h5 class="teammates__name">Джейк Финн</h5>
-                                            </div>
+                                            <h5 class="teammates__name">Джейк Финн</h5>
                                         </a>
                                         <div class="teammates__desc">
                                             <img src="IMG4/teampic.png" alt="Ричард Джеймс" class="teammates__foto">
@@ -177,10 +163,7 @@
                                     </li>
                                     <li>
                                         <a href="#" class="teammates__trigger">
-                                            <div class="teammates__heading">
-                                                <img src="IMG4/polygon-1.svg" alt="\/" class="teammates__icon">
-                                                <h5 class="teammates__name">Николай Иванов</h5>
-                                            </div>
+                                            <h5 class="teammates__name">Николай Иванов</h5>
                                         </a>
                                         <div class="teammates__desc">
                                             <img src="IMG4/teampic.png" alt="Ричард Джеймс" class="teammates__foto">
@@ -205,9 +188,9 @@
                     <div class="menu__accordeon">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="#" class="menu__trigger  ">
+                                <a href="#" class="menu__trigger">
                                 <div class="menu__namebg menu__namebg_meateaters">
-                                    <h3 class="menu__name menu__trigger_active">Для мясоедов</h3>
+                                    <h3 class="menu__name ">Для мясоедов</h3>
                                 </div>
                                 </a>
                                 <div class="menu__desc">
@@ -241,91 +224,86 @@
 
             <section class="section feedbacks">
                 <div class="opinion-container">
-                    <div class="opinion">
-                        <div class="opinion__img opinion__img_1">
-                            <div class="opinion__content">
-                                <h5 class="opinion__title">Константин Спилберг</h5>
-                                <div class="opinion__text">
-                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                                </div>
-                                <div class="opinion_btn">Подробнее</div>
+                    <div class="opinion__img opinion__img_1">
+                        <div class="opinion__content">
+                            <h5 class="opinion__title">Константин Спилберг</h5>
+                            <div class="opinion__text">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                             </div>
-                        </div>
-
-                        <div class="opinion__img opinion__img_2">
-                            <div class="opinion__content">
-                                <h5 class="opinion__title">Константин Спилберг</h5>
-                                <div class="opinion__text">
-                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                                </div>
-                                <div class="opinion_btn">Подробнее</div>
-                            </div>
-                        </div>
-
-                        <div class="opinion__img opinion__img_3">
-                            <div class="opinion__content">
-                                <h5 class="opinion__title">Константин Спилберг</h5>
-                                <div class="opinion__text">
-                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                                </div>
-                                <div class="opinion_btn">Подробнее</div>
-                            </div>
-                        </div>
-
-                        <div class="opinion__img opinion__img_4">
-                            <div class="opinion__content">
-                                <h5 class="opinion__title">Константин Спилберг</h5>
-                                <div class="opinion__text">
-                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                                </div>
-                                <div class="opinion_btn">Подробнее</div>
-                            </div>
+                            <div class="opinion_btn">Подробнее</div>
                         </div>
                     </div>
 
-                    <div class="opinion">
-                        <div class="opinion__img opinion__img_5">
-                            <div class="opinion__content">
-                                <h5 class="opinion__title">Константин Спилберг</h5>
-                                <div class="opinion__text">
-                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                                </div>
-                                <div class="opinion_btn">Подробнее</div>
+                    <div class="opinion__img opinion__img_2">
+                        <div class="opinion__content">
+                            <h5 class="opinion__title">Константин Спилберг</h5>
+                            <div class="opinion__text">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                             </div>
-                        </div>
-
-
-                        <div class="opinion__img opinion__img_6">
-                            <div class="opinion__content">
-                                <h5 class="opinion__title">Константин Спилберг</h5>
-                                <div class="opinion__text">
-                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                                </div>
-                                <div class="opinion_btn">Подробнее</div>
-                            </div>
-                        </div>
-
-
-                        <div class="opinion__img opinion__img_7">
-                            <div class="opinion__content">
-                                <h5 class="opinion__title">Константин Спилберг</h5>
-                                <div class="opinion__text">
-                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                                </div>
-                                <div class="opinion_btn">Подробнее</div>
-                            </div>
-                        </div>
-
-                        <div class="opinion__img opinion__img_8">
-                            <div class="opinion__content">
-                                <h5 class="opinion__title">Константин Спилберг</h5>
-                                <div class="opinion__text">
-                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                                </div>
-                                <div class="opinion_btn">Подробнее</div>
-                            </div>
+                            <div class="opinion_btn">Подробнее</div>
                         </div>
                     </div>
+
+                    <div class="opinion__img opinion__img_3">
+                        <div class="opinion__content">
+                            <h5 class="opinion__title">Константин Спилберг</h5>
+                            <div class="opinion__text">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            </div>
+                            <div class="opinion_btn">Подробнее</div>
+                        </div>
+                    </div>
+
+                    <div class="opinion__img opinion__img_4">
+                        <div class="opinion__content">
+                            <h5 class="opinion__title">Константин Спилберг</h5>
+                            <div class="opinion__text">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            </div>
+                            <div class="opinion_btn">Подробнее</div>
+                        </div>
+                    </div>
+
+                    <div class="opinion__img opinion__img_5">
+                        <div class="opinion__content">
+                            <h5 class="opinion__title">Константин Спилберг</h5>
+                            <div class="opinion__text">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            </div>
+                            <div class="opinion_btn">Подробнее</div>
+                        </div>
+                    </div>
+
+                    <div class="opinion__img opinion__img_6">
+                        <div class="opinion__content">
+                            <h5 class="opinion__title">Константин Спилберг</h5>
+                            <div class="opinion__text">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            </div>
+                            <div class="opinion_btn">Подробнее</div>
+                        </div>
+                    </div>
+
+                    <div class="opinion__img opinion__img_7">
+                        <div class="opinion__content">
+                            <h5 class="opinion__title">Константин Спилберг</h5>
+                            <div class="opinion__text">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            </div>
+                            <div class="opinion_btn">Подробнее</div>
+                        </div>
+                    </div>
+
+                    <div class="opinion__img opinion__img_8">
+                        <div class="opinion__content">
+                            <h5 class="opinion__title">Константин Спилберг</h5>
+                            <div class="opinion__text">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            </div>
+                            <div class="opinion_btn">Подробнее</div>
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
 
@@ -334,52 +312,72 @@
                     <h2 class="order__title"> Закажите доставку</h2>
                     <form action="order.php" method="post" class="orderform">
                         <div class="orderform__left">
-                            <div class="orderform__item orderform__item_half">
-                                <label for="fullname">Имя</label>
-                                <input type="text" name="fullname" id="fullname" class="orderform__field">
+                            <div class="orderform__row">
+                                <div class="orderform__item">
+                                    <label for="fullname">Имя</label>
+                                    <input type="text" name="fullname" id="fullname" class="orderform__field">
+                                </div>
+                                <div class="orderform__item">
+                                    <label for="phone">Телефон</label>
+                                    <input type="text" name="phone" id="phone" class="orderform__field">
+                                </div>
                             </div>
-                            <div class="orderform__item orderform__item_half">
-                                <label for="phone">Телефон</label>
-                                <input type="text" name="phone" id="phone" class="orderform__field">
+                            <div class="orderform__row">
+                                <div class="orderform__item ">
+                                    <label for="street">Улица</label>
+                                    <input type="text" name="street" id="street" class="orderform__field">
+                                </div>
                             </div>
-                            <div class="orderform__item ">
-                                <label for="street">Улица</label>
-                                <input type="text" name="street" id="street" class="orderform__field">
-                            </div>
-                            <div class="orderform__item orderform__item_quarter">
-                                <label for="housenum">Дом</label>
-                                <input type="text" name="housenum" id="housenum" class="orderform__field">
-                            </div>
-                            <div class="orderform__item orderform__item_quarter">
-                                <label for="building">Корпус</label>
-                                <input type="text" name="building" id="building" class="orderform__field">
-                            </div>
-                            <div class="orderform__item orderform__item_quarter">
-                                <label for="flatnum">Квартира</label>
-                                <input type="text" name="flatnum" id="flatnum" class="orderform__field">
-                            </div>
-                            <div class="orderform__item orderform__item_quarter">
-                                <label for="floor">Этаж</label>
-                                <input type="text" name="floor" id="floor" class="orderform__field">
+                            <div class="orderform__row">
+                                <div class="orderform__item">
+                                    <label for="housenum">Дом</label>
+                                    <input type="text" name="housenum" id="housenum" class="orderform__field">
+                                </div>
+                                <div class="orderform__item">
+                                    <label for="building">Корпус</label>
+                                    <input type="text" name="building" id="building" class="orderform__field">
+                                </div>
+                                <div class="orderform__item">
+                                    <label for="flatnum">Квартира</label>
+                                    <input type="text" name="flatnum" id="flatnum" class="orderform__field">
+                                </div>
+                                <div class="orderform__item">
+                                    <label for="floor">Этаж</label>
+                                    <input type="text" name="floor" id="floor" class="orderform__field">
+                                </div>
                             </div>
                         </div>
                         <div class="orderform__right">
-                            <div class="orderform__item">
+                            <div class="orderform__row orderform__row_textarea">
                                 <label for="message">Комментарий</label>
                                 <textarea name="message" id="message" class="orderform__textarea"></textarea>
                             </div>
-                            <div class="orderform__item">
-                                <input type="radio" name="payment" value="change" class="orderform__radio"><span>Потребуется сдача</span>
-                                <input type="radio" name="payment" value="card" class="orderform__radio"><span>Оплата по карте</span>
-                            </div>
-                            <div class="orderform__item">
+                            <div class="orderform__row">
                                 <label>
-                                <input type="checkbox" name="callback" checked class="orderform__radio">
-                                Не перезванивать
+                                    <input class="orderform__switch" type="radio" name="payment" value="change">
+                                    <span class="orderform__switch_radio"></span>
+                                    <span class="orderform__switch-label">Потребуется сдача</span>
+                                </label>
+
+                                <label>
+                                    <input class="orderform__switch" type="radio" name="payment" value="card" checked>
+                                    <span class="orderform__switch_radio"></span>
+                                    <span class="orderform__switch-label">Оплата по карте</span>
                                 </label>
                             </div>
-                        
-                            
+                            <div class="orderform__row">
+
+                                <label>
+                                    <input class="orderform__switch" type="checkbox" name="checkbox-test" checked>
+                                    <span class="orderform__switch_checkbox"></span>
+                                    <span class="orderform__switch-label">Не перезванивать</span>
+                                </label>
+                            </div>
+                            <div class="orderform__row"> 
+                                <input type="submit" class="order-btn" value="Заказать">
+                                <button type="reset" class="reset-btn" value="Сброс">Сброс</button>
+
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -413,6 +411,18 @@
                     </footer>
                 </div>
             </section>
+            <aside  class="dots">
+                <ul class="dots__list">
+                    <li class="dots__item dots__item_active"><a href="#"></a></li>
+                    <li class="dots__item"><a href="#"></a></li>
+                    <li class="dots__item"><a href="#"></a></li>
+                    <li class="dots__item"><a href="#"></a></li>
+                    <li class="dots__item"><a href="#"></a></li>
+                    <li class="dots__item"><a href="#"></a></li>
+                    <li class="dots__item"><a href="#"></a></li>
+                    <li class="dots__item"><a href="#"></a></li>
+                </ul>
+            </aside>
         </div>
     </div>
 </body>

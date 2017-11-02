@@ -1,0 +1,28 @@
+.dots {
+    position: absolute;
+    top: 98px;
+    right: 50px;
+}
+
+.dots__list {
+    margin-left: 30px;
+}
+
+.dots__item {
+    @include circle(5px, #ffffff);
+    margin-bottom: 16px;
+    position: relative; 
+
+
+    &:first-child::after {
+        content: "";
+        background-color: transparent;
+        border: 1px solid white;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        position: absolute;
+        right: -4px;
+        top: -5px;
+    } 
+}

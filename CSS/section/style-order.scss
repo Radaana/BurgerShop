@@ -26,7 +26,7 @@
 
     &__left {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column nowrap;
         justify-content: space-between;
         border: 1px solid yellow;
         width: 50%;
@@ -41,31 +41,31 @@
     }
 }
 
+.orderform__row {
+    display: flex;
+    margin-bottom: 20px;
+    &_textarea {
+        flex-flow: column nowrap;
+    }
+}
+
 .orderform__item {
     width: 100%;
+    margin-right: 20px;
+    flex: 1;
 
-
-    &_half {
-        min-width: 220px;
-        width: 45%;
-    }
-
-    &_quarter {
-        min-width: 100px;
-        width: 18%;
-        margin-right: 20px;
-    }
-
-    &_quarter:last-child {
+    &:last-child {
         margin-right: 0;
     }
 }
 
 .orderform__field {
     width: 100%;
-    min-width: 100px;
+    // min-width: 100px;
     height: 35px;
+    border: none;
     border-radius: 5px;
+    padding: 5px;
     }
 
 .orderform__textarea {
@@ -76,7 +76,71 @@
     border-radius: 5px;
 }
 
-.orderform__radio:checked {
-    background-color: #f9b43b;
+
+.orderform__switch {
+    display: none;
+
+    &_checkbox {
+        position: relative;
+        width: 15px;
+        height: 15px;
+        background-color: #fff;
+    }
+
+    &_radio {
+        position: relative;
+        width: 15px;
+        height: 15px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin-right: 9px;
+    }
+}
+
+.orderform__switch_radio,
+.orderform__switch_checkbox,
+.orderform__switch-label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.orderform__switch:checked + .orderform__switch_checkbox::before {
+    content: "";
+    display: block;
+    position: absolute;
+
+    top: 0px;
+    right: 2px;
+    bottom: 2px;
+    left: 3px;
     
+    width: 7px;
+    height: 12px;
+    border-right: 3px solid #e45028;
+    border-bottom: 3px solid #e45028;
+    transform: rotate(45deg);
+}
+
+.orderform__switch:checked + .orderform__switch_radio::before {
+    content: "";
+    display: block;
+    position: absolute;
+
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+
+    background: #e45028;
+    border-radius: 50%;
+}
+
+
+.reset-btn  {
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-family: ubuntulight;
+    font-size: 14px;
+    margin-left: 20px;
 }
