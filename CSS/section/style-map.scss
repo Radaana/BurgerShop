@@ -16,6 +16,7 @@
     height: 60px;
     background-color: #0f0f0f;
     padding: 10px 20px;
+    display: flex;
 
     &__left {
         width: 50%;
@@ -26,6 +27,10 @@
         width: 50%;
         text-align: right;
     }
+}
+
+.address {
+    margin-left: 60px;
 }
 
 .address__place {
@@ -52,12 +57,13 @@
 }
 
 .socials {
-    margin-right: 80px;
+    margin-right: 60px;
+    margin-top: 10px;
 
     &__item {
         fill: #ffffff;
         opacity: 0.3;
-        margin-left: 20px;
+        margin-left: 15px;
         
         &:hover {
             opacity: 1;

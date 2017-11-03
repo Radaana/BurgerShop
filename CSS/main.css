@@ -144,8 +144,8 @@ a {
     margin-top: 13px;
     margin-right: auto; }
   .header-middle {
-    margin-top: 10px;
-    margin-right: 12px; }
+    margin-top: 6px;
+    margin-right: 15px; }
   .header-right {
     margin-right: 79px;
     margin-top: 13px; }
@@ -371,7 +371,7 @@ a {
     margin-left: 0px; }
 
 .bestpoint__img {
-  margin: 0 auto 20px; }
+  margin: 0 auto; }
   .bestpoint__img_meat {
     width: 97px;
     height: 89px;
@@ -395,7 +395,8 @@ a {
 .bestpoint__title {
   font-family: lifehackmedium;
   font-size: 24px;
-  color: #2f3234; }
+  color: #2f3234;
+  line-height: 28px; }
 
 .bestpoint__text p {
   font-family: ubuntulight;
@@ -414,26 +415,26 @@ a {
   height: 100%;
   min-width: 550px;
   width: 50%;
-  margin-left: 50%;
+  margin-left: 52%;
   background-color: rgba(0, 0, 0, 0.8); }
 
 .teammates {
   position: absolute;
-  top: 90px;
+  top: 65px;
   left: 50%;
-  margin: 0px 80px;
+  margin: 0px 90px;
   bottom: 0;
   right: 0; }
 
 .teammates__title {
   display: block;
-  min-height: 130px;
   font-family: gagalinregular;
   font-size: 72px;
   text-transform: uppercase;
   color: #f9b43b;
   font-weight: 400;
   margin: 0;
+  margin-bottom: 46px;
   vertical-align: middle; }
 
 .teammates__name {
@@ -443,7 +444,6 @@ a {
   font-size: 14px;
   font-weight: 400;
   color: #ffffff;
-  min-height: 45px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -451,7 +451,8 @@ a {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  padding: 15px 0px; }
   .teammates__name:before {
     content: "";
     height: 0;
@@ -470,27 +471,26 @@ a {
   overflow: hidden; }
 
 .teammates__foto {
-  width: 40%;
-  height: 40%;
-  min-width: 105px;
-  min-height: 105px;
-  padding: 10px; }
+  width: 25%;
+  height: 25%;
+  min-width: 100px;
+  min-height: 100px;
+  margin-left: 15px; }
 
 .teammates__text {
-  width: 60%;
-  min-width: 210px;
+  width: 66%;
   color: #ffffff;
   font-size: 14px;
   line-height: 24px;
   font-family: ubuntulight;
-  padding: 10px 20px; }
+  padding: 0px 20px; }
 
 .teammates__job {
   margin: 0;
   font-family: ubuntubold;
   font-size: 14px; }
 
-.teammates__trigger_active .teammates__icon {
+.teammates__trigger_active .teammates__name:before {
   -webkit-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
   transform: scale(1, -1); }
@@ -500,7 +500,7 @@ a {
 
 .teammates__trigger_active + .teammates__desc {
   height: 23%;
-  min-height: 150px;
+  min-height: 120px;
   overflow: visible; }
 
 .menu-bg {
@@ -513,7 +513,7 @@ a {
 
 .menu__head {
   position: absolute;
-  top: 112px;
+  top: 87px;
   left: 95px; }
 
 .menu__title {
@@ -558,7 +558,7 @@ a {
 .menu__namebg {
   height: 100%;
   min-height: 650px;
-  width: 83px;
+  width: 80px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -757,7 +757,11 @@ a {
   background: url("../IMG7/order-texture.png") no-repeat center center, #000000 url("../IMG7/order-bg.png") no-repeat center center;
   background-size: cover, cover;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
 
 .order__title {
   font-family: gagalinregular;
@@ -767,7 +771,8 @@ a {
   font-weight: 400;
   padding: 0;
   margin: 0;
-  margin-bottom: 3.75rem; }
+  margin-bottom: 3.75rem;
+  margin-top: 4.0625rem; }
 
 .orderform {
   width: 86%;
@@ -789,10 +794,10 @@ a {
     -webkit-flex-flow: column nowrap;
     -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     border: 1px solid yellow;
     width: 50%;
     margin-right: 20px; }
@@ -859,13 +864,16 @@ a {
     height: 15px;
     background-color: #fff;
     border-radius: 50%;
-    margin-right: 9px; }
+    margin-right: 5px; }
 
 .orderform__switch_radio,
 .orderform__switch_checkbox,
 .orderform__switch-label {
   display: inline-block;
   vertical-align: middle; }
+
+.orderform__switch-label {
+  margin-right: 20px; }
 
 .orderform__switch:checked + .orderform__switch_checkbox::before {
   content: "";
@@ -900,7 +908,7 @@ a {
   color: #ffffff;
   font-family: ubuntulight;
   font-size: 14px;
-  margin-left: 20px; }
+  margin-left: 15px; }
 
 .map-bg {
   background: #000000 url("../IMG8/map-bg.png") no-repeat center center;
@@ -917,13 +925,20 @@ a {
   right: 0;
   height: 60px;
   background-color: #0f0f0f;
-  padding: 10px 20px; }
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
   .footer__left {
     width: 50%;
     text-align: left; }
   .footer__right {
     width: 50%;
     text-align: right; }
+
+.address {
+  margin-left: 60px; }
 
 .address__place {
   font-size: 14px;
@@ -944,18 +959,19 @@ a {
     margin-right: 5px; }
 
 .socials {
-  margin-right: 80px; }
+  margin-right: 60px;
+  margin-top: 10px; }
   .socials__item {
     fill: #ffffff;
     opacity: 0.3;
-    margin-left: 20px; }
+    margin-left: 15px; }
     .socials__item:hover {
       opacity: 1; }
 
 .dots {
   position: absolute;
-  top: 98px;
-  right: 50px; }
+  top: 97px;
+  right: 37px; }
 
 .dots__list {
   margin-left: 30px; }

@@ -5,6 +5,7 @@
     // position: relative;
     height: 100%;
     width: 100%;
+    justify-content: flex-start;
 }
 
 .order__title {
@@ -13,7 +14,7 @@
     padding: 0;
     margin: 0;
     margin-bottom: rem(60px);
-    // margin-top: rem(55px);
+    margin-top: rem(65px);
 }
 
 .orderform {
@@ -27,7 +28,7 @@
     &__left {
         display: flex;
         flex-flow: column nowrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         border: 1px solid yellow;
         width: 50%;
         margin-right: 20px;
@@ -46,12 +47,14 @@
     margin-bottom: 20px;
     &_textarea {
         flex-flow: column nowrap;
+        // margin-top: 5px;
     }
 }
 
 .orderform__item {
     width: 100%;
     margin-right: 20px;
+    // margin-top: 5px;
     flex: 1;
 
     &:last-child {
@@ -93,8 +96,10 @@
         height: 15px;
         background-color: #fff;
         border-radius: 50%;
-        margin-right: 9px;
+        margin-right: 5px;
     }
+
+    
 }
 
 .orderform__switch_radio,
@@ -103,6 +108,10 @@
     display: inline-block;
     vertical-align: middle;
 }
+
+.orderform__switch-label {
+        margin-right: 20px;
+    }
 
 .orderform__switch:checked + .orderform__switch_checkbox::before {
     content: "";
@@ -142,5 +151,5 @@
     color: #ffffff;
     font-family: ubuntulight;
     font-size: 14px;
-    margin-left: 20px;
+    margin-left: 15px;
 }
