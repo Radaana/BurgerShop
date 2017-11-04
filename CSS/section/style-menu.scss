@@ -9,8 +9,8 @@
 
 .menu__head {
     position: absolute;
-    top: 87px;
-    left: 95px;
+    top: rem(87px);
+    left: rem(95px);
 }
 
 .menu__title {
@@ -27,14 +27,17 @@
     bottom: 0;
     left: 40%;
 
+    @include tablets {
+            left: 0;
+        }
+
 }
 
 .menu__list {
     display: flex;
     justify-content: flex-end;
-    min-height: 650px;
+    min-height: rem(650px);
     height: 100%;
-    border: 1px solid yellow;
 }
 
 .menu__item {
@@ -45,8 +48,8 @@
 
 .menu__namebg {
     height: 100%;
-    min-height: 650px;
-    width: 80px;
+    min-height: rem(650px);
+    width: rem(80px);
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -58,6 +61,10 @@
             background-size: cover;
             }
         }
+
+    @include tablets {
+        justify-content: flex-start;
+    }
 }
 
 .menu__name {
@@ -65,34 +72,49 @@
     margin: 0;
     transform: rotate(-90deg);
     font-family: gagalinregular;
-    font-size: 40px;
+    font-size: rem(40px);
     font-weight: 400;
     color: #ffffff;
-    width: 350px;
-    height: 83px;
+    width: rem(350px);
+    height: rem(83px);
     line-height: 1;
-    padding-top: 25px;
+    padding-top: rem(25px);
     text-align: center;
+
+    @include tablets {
+        vertical-align: middle;
+        text-align: left;
+        // padding-left: 100px;
+        margin-bottom: rem(170px);
+        padding-top: rem(18px);
+    }
 }
 
 .menu__desc {
     background-color: rgba(#000000, 0.8);
     padding: 0;
     color: #ffffff;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14px);
+    line-height: rem(24px);
     font-family: ubuntulight;
-    width: 0px;
+    width: rem(0px);
     overflow: hidden;
 }
 
 .menu__trigger_active {
     .menu__name {
         color: #ffffff;
+
+        @include tablets {
+            color: #f9b43b;
+        }
     }
 
     + .menu__desc {
+        min-width: rem(100px);
         width: auto;
-        padding: 60px 35px;
+        flex-grow: 1;
+        padding: rem(60px) rem(35px);
     }
+
 }

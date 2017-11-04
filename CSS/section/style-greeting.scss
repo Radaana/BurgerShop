@@ -1,4 +1,4 @@
-.greet-bg {
+.greet-section {
     background:  url("../IMG/texture.png") no-repeat center center,
                 url("../IMG/texture.png") no-repeat center center,
                 #000000 url("../IMG/video-bg.png") no-repeat center center;
@@ -13,26 +13,49 @@
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    height: 81px;
+    height: rem(81px);
 
-    &-left {
-        margin-left: 77px;
-        margin-top: 13px;
+    &__left {
+        margin-left: rem(77px);
+        margin-top: rem(13px);
         margin-right: auto;
+
+        @include tablets {
+            margin-left: rem(10px);
+            margin-top: rem(15px);
+        }
+
     }
-    &-middle {
-        margin-top: 6px;
-        margin-right: 15px;
+    &__middle {
+        margin-top: rem(6px);
+        margin-right: rem(15px);
+
+        @include tablets {
+            display: none;
+        }
     }
-    &-right {
-        margin-right: 79px;
-        margin-top: 13px;
+    &__right {
+        margin-right: rem(79px);
+        margin-top: rem(13px);
+
+        display: flex;
+        align-items: center;
+
+        @include tablets {
+            margin-right: rem(25px);
+            margin-top: rem(20px);
+        }
     }
 }
 
+.logo {
+    width: rem(92px);
+    height: rem(69px);
+}
+
 .logo__pic {
-    width: 92px;
-    height: 69px;
+    width: 100%;
+    height: 100%;
 }
 
 .navigation__item {
@@ -45,7 +68,7 @@
         vertical-align: middle;
         content: ' ';
         @include circle(5px, #ffffff);
-        margin: 0 12px;
+        margin: 0 rem(12px);
     }
 
     &:last-child:after {
@@ -55,7 +78,7 @@
 
 .navigation__link {
         color: #ffffff;
-        font-size: 13px;
+        font-size: rem(13px);
         font-family: ubuntumedium;
         text-transform: uppercase;
         display: inline-block;
@@ -68,8 +91,9 @@
 }
 
 .order-btn {
+    display: inline-block;
     @include btn(#e45028);
-    font-size: 13px;
+    font-size: rem(13px);
 
     a {
         color: #ffffff;
@@ -80,72 +104,157 @@
     }
 }
 
+.hamburger-menu {
+    vertical-align: middle;
+    position: relative;
+    height: rem(22px);
+    align-items: center;
+    margin-left: rem(30px);
+    display: none;
+
+    @include tablets {
+        display: flex;
+    }
+}
+
+.hamburger-menu__bars {
+    &, &:before, &:after {
+        background: #fff;
+        width: rem(24px);
+        height: rem(5px);
+        border-radius: rem(3px);
+    }
+
+    &:before, &:after {
+        content: "";
+        display: block;
+        position: absolute;
+    }
+
+    &:before {
+        top: 0;
+    }
+
+    &:after {
+        bottom: 0;
+    }
+}
+
+
 .greeting {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
-    flex-wrap: wrap;
+    // height: initial;
     flex-grow: 1;
     padding-bottom: 15%;
 
-    &__bg {
-        background: url(../IMG/drops.png) no-repeat 100px 69px;
-        width: 500px;
-        height: 420px;
-        margin-left: auto;
-        flex-basis: 50%;
-        display: flex;
-    }
-
-    &__image {
-        margin-left: 135px;
-        margin-top: 3px;
-        width: 414px;
-        height: 420px;
-        }
-
-    &__words {
-        color: #ffffff;
-        width: 500px;
-        height: 420px;
-        margin-right: auto;
-        padding-left: 10px;
-        padding-top: 130px;
-        flex-basis: 50%;
-        display: flex;
+    @include tablets {
         flex-direction: column;
-        justify-content: center;
-
-        &-gagalin {
-
-            h2 {
-                @include gagalin(#f9b43b);
-                font-weight: 400;
-                margin: 0;
-                padding-top: 60px;
-                line-height: 0;
-            }
-        }
-        &-lifehack {
-                font-family: lifehackmedium;
-                font-size: 65px;
-                line-height: 0.97;
-                letter-spacing: -1.8px;
-                font-weight: 500;
-                line-height: 1;
-        }
+        align-items: center;
+        // justify-content: flex-start;
+        text-align: center;
+        padding: 0 10%;
     }
 }
+
+.greeting__burger {
+    max-width: rem(451px);
+    max-height: rem(424px);
+    width: 50%;
+    // height: 50%;
+    margin-left: rem(95px);
+    margin-top: rem(5px);
+    // flex-basis: 50%;
+    display: flex;
+    
+    @include tablets {
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+        margin-top: rem(81px);
+        height: 100%;
+    }
+
+}
+
+.greeting__image {
+        width: 100%;
+        height: 100%;
+}
+
+.greeting__words {
+    color: #ffffff;
+    max-width: rem(500px);
+    max-height: rem(420px);
+    width: 50%;
+    margin-right: auto;
+    padding-left: rem(10px);
+    padding-top: rem(130px);
+    // flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    @include tablets {
+        width: 100%;
+        padding: 0;
+        height: 30%;
+        align-items: center;
+        margin-right: 0;
+    }
+
+
+
+
+    &-gagalin {
+
+        h2 {
+            @include gagalin(#f9b43b);
+            font-weight: 400;
+            margin: 0;
+            padding-top: rem(60px);
+            line-height: 1;
+        }
+    }
+    &-lifehack {
+            font-family: lifehackmedium;
+            margin: 0;
+            padding: 0;
+            font-size: rem(65px);
+            line-height: 0.97;
+            letter-spacing: rem(-1.8px);
+            font-weight: 500;
+            line-height: 1;
+            display: inline-block;
+            vertical-align: top;
+
+            @include tablets {
+                margin-top: rem(-45px);
+            }
+    }
+}
+
 
 
 .arrowbox {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0px;
     position: absolute;
-    bottom: 33px;
+    bottom: rem(33px);
     right: 50%;
+}
+
+.arrow {
+    width: rem(29px);
+    height: rem(14px);
+}
+.arrow__icon {
+    width: 100%;
+    height: 100%;  
+    fill: #ffffff;
 }
 

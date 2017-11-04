@@ -1,6 +1,6 @@
 @mixin gagalin($color) {
     font-family: gagalinregular;
-    font-size: 72px;
+    font-size: rem(72px);
     text-transform: uppercase;
     color: $color;
 }
@@ -9,12 +9,10 @@
 @mixin btn($bgcolor) {
     background-color: $bgcolor;
     border: none;
-    border-radius: 5px;
-    width: 97px;
-    height: 35px;
+    border-radius: rem(5px);
     text-align: center;
     vertical-align: middle;
-    padding: 10px 16px;
+    padding: rem(10px) rem(16px);
     text-transform: uppercase;
     font-family: ubuntumedium;
     color: #ffffff;
@@ -28,7 +26,3 @@
   background-color: $color;
 }
 
-//responsive
-@function rem($px) {
-  @return $px / 16px+0rem;
-}

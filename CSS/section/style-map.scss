@@ -13,9 +13,9 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    height: rem(60px);
     background-color: #0f0f0f;
-    padding: 10px 20px;
+    padding: rem(10px) rem(20px);
     display: flex;
 
     &__left {
@@ -30,12 +30,16 @@
 }
 
 .address {
-    margin-left: 60px;
+    margin-left: rem(60px);
+
+    @include tablets {
+        margin-left: rem(20px);
+    }
 }
 
 .address__place {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14px);
+    line-height: rem(24px);
     font-family: ubuntulight;
     font-style: normal;
 }
@@ -48,22 +52,26 @@
     &:before {
         content: "";
         display: inline-block;
-        height: 12px;
-        width: 11px;
+        height: rem(12px);
+        width: rem(11px);
         background: url('../IMG8/phone.svg') no-repeat center center;
         fill: #e45028;
-        margin-right: 5px;
+        margin-right: rem(5px);
     }
 }
 
 .socials {
-    margin-right: 60px;
-    margin-top: 10px;
+    margin-right: rem(60px);
+    margin-top: rem(10px);
+
+    @include tablets {
+        margin-right: rem(20px);
+    }
 
     &__item {
         fill: #ffffff;
         opacity: 0.3;
-        margin-left: 15px;
+        margin-left: rem(15px);
         
         &:hover {
             opacity: 1;

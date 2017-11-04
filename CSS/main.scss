@@ -1,6 +1,11 @@
+$tablets: 768px;
+$phones: 480px;
+
 @import "normalize.css";
 //config
 @import "config/mixins.scss";
+//adaptive
+@import "config/media.scss";
 //layout
 @import "layout/fonts.scss";
 @import "layout/base.scss";

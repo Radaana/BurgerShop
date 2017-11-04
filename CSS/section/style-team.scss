@@ -1,51 +1,81 @@
-.team-bg {
+.team {
     background: #000000 url("../IMG4/team-bg.png") no-repeat center center;
     background-size: cover;
-    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.team-bg {
     height: 100%;
     width: 100%;
 }
 
 .teammates-bg {
-    min-height: 650px;
+    position: relative;
     height: 100%;
-    min-width: 550px;
-    width: 50%;
-    margin-left: 52%;
-    background-color: rgba(#000000, 0.8);
+    width: 100%;
 }
 
 .teammates {
     position: absolute;
-    top: 65px;
-    left: 50%;
-    margin: 0px 90px;
+    top: 0;
+    left: 51%;
     bottom: 0;
     right: 0;
-}
+    background-color: rgba(#000000, 0.8);
 
+    display: flex;
+    flex-direction: column;
+
+    @include tablets {
+        left: 0;
+        align-items: center;
+        // justify-content: center;
+    }
+}
 
 .teammates__title {
     display: block;
     @include gagalin(#f9b43b);
     font-weight: 400;
-    margin: 0;
-    margin-bottom: 46px;
-    vertical-align: middle;
+    margin: rem(65px) rem(0px) rem(46px) rem(77px);
 
+    @include tablets {
+        margin-left: 0;
+        margin-top: rem(100px);
+    }
 }
+
+.teammates__accordeon {
+    margin: rem(0px) rem(80px);
+
+    @include tablets {
+        margin-top: rem(55px);
+    }
+    
+}
+
+.teammates__item {
+    display: flex;
+    flex-direction: column;
+
+    @include tablets {
+        align-items: center;
+    }
+}
+
 
 .teammates__name {
     margin: 0;
     display: inline-block;
     font-family: gagalinregular;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 400;
     color: #ffffff;
 
     display: flex;
     align-items: center;
-    padding: 15px 0px;
+    padding: rem(15px) rem(0px);
 
     &:before {
         content: "";
@@ -53,39 +83,65 @@
         width: 0;
         border: 4.5px solid transparent;
         border-top-color: #f9b43b;
-        border-bottom-width: 0px;
-        margin-right: 9px;
+        border-bottom-width: rem(0px);
+        margin-right: rem(9px);
+    }
+
+    @include tablets {
+        font-size: 24px;
+        // padding-top: 0;
+        line-height: 28px;
+        padding: rem(20px) rem(0px);
+
     }
 }
 
 .teammates__desc{
     display: flex;
-    height: 0px;
+    height: rem(0px);
     overflow: hidden;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .teammates__foto {
     width: 25%;
     height: 25%;
-    min-width: 100px;
-    min-height: 100px;
-    margin-left: 15px;
+    max-width: rem(100px);
+    max-height: rem(100px);
+    margin-left: rem(15px);
 
+}
+
+.teammates__teampic {
+    width: 100%;
+    height: 100%;
 }
 
 .teammates__text {
     width: 66%;
     color: #ffffff;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14px);
+    line-height: rem(24px);
     font-family: ubuntulight;
-    padding: 0px 20px;
+    padding: rem(0px) rem(20px);
+
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .teammates__job {
     margin: 0;
     font-family: ubuntubold;
-    font-size: 14px;
+    font-size: rem(14px);
+
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .teammates__trigger_active {
@@ -99,7 +155,7 @@
 
     +.teammates__desc {
         height: 23%;
-        min-height: 120px;
+        min-height: rem(120px);
         overflow: visible;
     }
 }

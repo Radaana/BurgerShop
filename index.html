@@ -19,43 +19,44 @@
             <section class="section greet-section">
                 <div class="container greet-bg">
                     <header class="header">
-                        <div class="header-left">
+                        <div class="header__left">
                             <div class="logo">
                                 <a href="#" class="logo__link"><img src="IMG/logo.svg" alt="Mr.Burger" title="Mr.Burger" class="logo__pic" width="92" height="69"></a>
                             </div>
                         </div>
-                        <div class="header-middle">
+                        <div class="header__middle">
                             <nav class="navigation">
                                 <ul class="navigation__list">
                                     <li class="navigation__item">
-                                        <a href="#" class="navigation__link">О нас</a>
+                                        <a href="#" class="navigation__link" data-scroll-to="1">О нас</a>
                                     </li>
                                     <li class="navigation__item">
-                                        <a href="#" class="navigation__link">Бургеры</a>
+                                        <a href="#" class="navigation__link" data-scroll-to="2">Бургеры</a>
                                     </li>
                                     <li class="navigation__item">
-                                        <a href="#" class="navigation__link">Команда</a>
+                                        <a href="#" class="navigation__link" data-scroll-to="3">Команда</a>
                                     </li>
                                     <li class="navigation__item">
-                                        <a href="#" class="navigation__link">Меню</a></li>
+                                        <a href="#" class="navigation__link" data-scroll-to="4">Меню</a></li>
                                     <li class="navigation__item" >
-                                        <a href="#" class="navigation__link">Отзывы</a>
+                                        <a href="#" class="navigation__link" data-scroll-to="5">Отзывы</a>
                                     </li>
                                     <li class="navigation__item">
-                                        <a href="#" class="navigation__link">Контакты</a>
+                                        <a href="#" class="navigation__link" data-scroll-to="7">Контакты</a>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
-                        <div class="header-right">
-                            <div class="order-btn">
-                                <a href="#">Заказать</a>
-                            </div>
+                        <div class="header__right">
+                            <a href="#" data-scroll-to="6" class="order-btn">Заказать</a>
+                            <a class="hamburger-menu" href="#">
+                                <div class="hamburger-menu__bars"></div>
+                            </a>
                         </div>
                     </header>
                     <div  class="greeting">
-                        <div class="greeting__bg">
-                            <img class="greeting__image" src="IMG/burger.png" alt="Mr.Burger">
+                        <div class="greeting__burger">
+                            <img class="greeting__image" src="IMG/burger-drops.png" alt="Mr.Burger">
                         </div>
                         <div class="greeting__words">
                             <div class="greeting__words-gagalin"><h2>Мы делаем</h2></div>
@@ -65,7 +66,10 @@
 
                     <div class="arrowbox">
                         <div class="arrow">
-                            <a href="#" class="arrow__link"><img src="IMG/arrow-scroll.png" alt="\/" class="arrow__img"></a>
+                            <a href="#" class="arrow__link">
+                                <svg class="arrow__icon">
+                                    <use xlink:href="CSS/sprite/sprite.svg#arrow-scroll"/>
+                                </svg></a>
                         </div>
                     </div>
                 </div>
@@ -125,7 +129,7 @@
 
 
             <section class="section team">  
-                <div class="container team-bg">
+                <div class=" team-bg">
                     <div class="teammates-bg">
                         <div class="teammates">
                             <h2 class="teammates__title">Команда</h2>
@@ -136,14 +140,14 @@
                                             <h5 class="teammates__name">Дэниэл Редклиф</h5>
                                         </a>
                                         <div class="teammates__desc">
-                                            <img src="IMG4/teampic.png" alt="Ричард Джеймс" class="teammates__foto">
+                                            <div class="teammates__foto"> <img src="IMG4/teampic.png" alt="Ричард Джеймс" class="teammates__teampic"></div>
                                             <div class="teammates__text">
                                                 <h6 class="teammates__job">Оператор </h6>
                                                 <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p> 
                                             </div>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="teammates__item">
                                         <a href="#" class="teammates__trigger teammates__trigger_active">
                                             <h5 class="teammates__name">Ричард Джеймс</h5>
                                         </a>
@@ -155,7 +159,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="teammates__item">
                                         <a href="#" class="teammates__trigger">
                                             <h5 class="teammates__name">Джейк Финн</h5>
                                         </a>
@@ -167,7 +171,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="teammates__item">
                                         <a href="#" class="teammates__trigger">
                                             <h5 class="teammates__name">Николай Иванов</h5>
                                         </a>
@@ -187,7 +191,7 @@
             </section>
             
             <section class="section menu">
-                <div class="container menu-bg ">
+                <div class=" menu-bg ">
                     <div class="menu__head">
                         <h2 class="menu__title">Меню</h2>
                     </div>
@@ -215,9 +219,9 @@
                             </li>
                             <li class="menu__item">
                                 <a href="#" class="menu__trigger">
-                                <div class="menu__namebg menu__namebg_diet">
+                                    <div class="menu__namebg menu__namebg_diet">
                                     <h3 class="menu__name">Диетическое</h3>
-                                </div>
+                                    </div>
                                 </a>
                                 <div class="menu__desc">
                                     <p>Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову</p>
@@ -381,7 +385,7 @@
                             </div>
                             <div class="orderform__row"> 
                                 <input type="submit" class="order-btn" value="Заказать">
-                                <button type="reset" class="reset-btn" value="Сброс">Сбросить</button>
+                                <button type="reset" class="reset-btn" value="Сброс">Очистить</button>
 
                             </div>
                         </div>

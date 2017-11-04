@@ -8,16 +8,16 @@
 
 
     width: 100%;
-    min-width: 1100px;
+    // min-width: rem(1100px);
     height: 100%;
-    min-height: 650px;
+    // min-height: rem(650px);
 
 }
 
 .opinion__img {
-    min-width: 275px;
+    // min-width: rem(275px);
     width: 25%;
-    min-height: 325px;
+    // min-height: rem(325px);
     height: 50%;
     position: relative;
     filter: grayscale(1);
@@ -38,6 +38,11 @@
             }
         }
     }
+
+    @include tablets {
+        width: 50%;
+        height: 25%;
+    }
 }
 
 .opinion__content {
@@ -48,30 +53,38 @@
     right: 0;
     color: #ffffff;
     z-index: 3;
-    padding: 30px 30px 30px 20px;
+    padding: rem(30px) rem(30px) rem(30px) rem(20px);
     display: none;
+
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .opinion__title {
     font-family: gagalinregular;
-    font-size: 14px;
+    font-size: rem(14px);
 }
 
 .opinion__text {
-    margin-top: 25px;
+    margin-top: rem(25px);
     line-height: 167%;
     font-family: ubuntulight;
-    font-size: 14px;
+    font-size: rem(14px);
 } 
 
 .opinion_btn {
     @include btn(#2f3234);
-    width: 110px;
-    font-size: 13px;
-    padding-top: 10px;
-    margin-top: 15px;
+    width: rem(110px);
+    font-size: rem(13px);
+    padding-top: rem(10px);
+    margin-top: rem(15px);
 
     &:hover {
         background-color: #1f2122;
+    }
+
+    @include tablets {
+        display: inline-block;
     }
 }
