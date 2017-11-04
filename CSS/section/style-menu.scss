@@ -72,11 +72,11 @@
     margin: 0;
     transform: rotate(-90deg);
     font-family: gagalinregular;
-    font-size: rem(40px);
+    font-size: 40px;
     font-weight: 400;
     color: #ffffff;
-    width: rem(350px);
-    height: rem(83px);
+    width: 350px;
+    height: 83px;
     line-height: 1;
     padding-top: rem(25px);
     text-align: center;
@@ -84,8 +84,7 @@
     @include tablets {
         vertical-align: middle;
         text-align: left;
-        // padding-left: 100px;
-        margin-bottom: rem(170px);
+        margin-bottom: rem(180px);
         padding-top: rem(18px);
     }
 }

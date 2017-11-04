@@ -21,11 +21,27 @@
     &__left {
         width: 50%;
         text-align: left;
+
+        @include phones {
+            width: 100%;
+            text-align: center;
+        }
+
     }
 
     &__right {
         width: 50%;
         text-align: right;
+
+        @include phones {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    @include phones {
+        flex-direction: column;
+        height: 115px;
     }
 }
 
@@ -38,8 +54,8 @@
 }
 
 .address__place {
-    font-size: rem(14px);
-    line-height: rem(24px);
+    font-size: 14px;
+    line-height: 24px;
     font-family: ubuntulight;
     font-style: normal;
 }

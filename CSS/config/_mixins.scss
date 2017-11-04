@@ -9,10 +9,10 @@
 @mixin btn($bgcolor) {
     background-color: $bgcolor;
     border: none;
-    border-radius: rem(5px);
+    border-radius: 5px;
     text-align: center;
     vertical-align: middle;
-    padding: rem(10px) rem(16px);
+    padding: 10px 16px;
     text-transform: uppercase;
     font-family: ubuntumedium;
     color: #ffffff;

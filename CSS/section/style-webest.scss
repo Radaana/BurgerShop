@@ -15,7 +15,7 @@
             url(../IMG2/tomato.png) no-repeat right bottom, 
             url(../IMG2/cheese-lists.png) no-repeat right bottom, 
             url(../IMG2/wood.png) no-repeat;
-    background-size: auto,auto,auto,auto,auto,auto, cover;
+    background-size: auto,auto, auto, cover;
     }
 }
 
@@ -28,15 +28,23 @@
     align-items: center;
 
     &__words {
-    @include gagalin(#2f3234);
-    padding: 0;
-    margin: 0;
-    margin-bottom: rem(60px);
-    margin-top: rem(55px);
+        @include gagalin(#2f3234);
+        padding: 0;
+        margin: 0;
+        margin-bottom: rem(60px);
+        margin-top: rem(55px);
+
+        @include phones {
+            font-size: 50px;
+        }
     }
 
     @include tablets {
         margin-top: rem(55px);
+    }
+
+    @include phones {
+        margin-top: rem(0px);
     }
 }
 
@@ -79,6 +87,7 @@
         min-width: 100px;
         margin-left: 0;
         align-items: stretch;
+        margin-bottom: rem(50px);
     }
 
 
@@ -115,9 +124,9 @@
 
     @include phones {
         // width: 40%;
-        width: rem(120px);
+        width: rem(150px);
         margin: 0;
-        margin-right: 10px;
+        margin-right: rem(20px);
     }
 }
 
@@ -138,17 +147,16 @@
 .bestpoint__title {
         margin: 0;
         font-family: lifehackmedium;
-        font-size: rem(24px);
+        font-size: 24px;
         color: #2f3234;
-        line-height: rem(28px);
-
+        line-height: 28px;
 }
 
 .bestpoint__text {
 
     p { 
         font-family: ubuntulight;
-        font-size: rem(14px);
+        font-size: 14px;
         color: #6d6d6c
         }
 

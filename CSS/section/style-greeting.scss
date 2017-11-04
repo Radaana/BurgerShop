@@ -25,6 +25,11 @@
             margin-top: rem(15px);
         }
 
+        @include phones {
+            margin-left: rem(15px);
+            margin-top: rem(25px);
+        }
+
     }
     &__middle {
         margin-top: rem(6px);
@@ -49,8 +54,8 @@
 }
 
 .logo {
-    width: rem(92px);
-    height: rem(69px);
+    width: 92px;
+    height: 69px;
 }
 
 .logo__pic {
@@ -146,14 +151,12 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    // height: initial;
     flex-grow: 1;
     padding-bottom: 15%;
 
     @include tablets {
         flex-direction: column;
         align-items: center;
-        // justify-content: flex-start;
         text-align: center;
         padding: 0 10%;
     }
@@ -174,6 +177,11 @@
         padding: 0;
         margin-left: 0;
         margin-top: rem(81px);
+        height: 100%;
+    }
+
+    @include tablets {
+        margin-top: rem(60px);
         height: 100%;
     }
 
