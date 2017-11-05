@@ -113,6 +113,12 @@
     height: rem(0px);
     overflow: hidden;
 
+    @include transit {
+        flex-direction: column;
+        align-items: left;
+        width: 100%;
+    }
+
     @include tablets {
         flex-direction: column;
         align-items: center;
@@ -124,10 +130,10 @@
 }
 
 .teammates__foto {
-    width: 25%;
-    height: 25%;
-    max-width: 100px;
-    max-height: 100px;
+    // width: 25%;
+    // height: 25%;
+    width: 100px;
+    height: 100px;
     margin-left: rem(15px);
 
 }
@@ -145,8 +151,13 @@
     font-family: ubuntulight;
     padding: rem(0px) rem(20px);
 
+    @include transit {
+        width: 100%;
+    }
+
     @include tablets {
         text-align: center;
+        width: 66%;
     }
 
     @include phones {

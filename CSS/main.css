@@ -322,6 +322,9 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 870px) {
+    .greeting__burger {
+      margin-left: 0rem; } }
   @media screen and (max-width: 768px) {
     .greeting__burger {
       width: 100%;
@@ -456,7 +459,7 @@ a {
     @media screen and (max-width: 480px) {
       .webest-header__words {
         font-size: 50px; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 870px) {
     .webest-header {
       margin-top: 3.4375rem; } }
   @media screen and (max-width: 480px) {
@@ -711,6 +714,18 @@ a {
   display: flex;
   height: 0rem;
   overflow: hidden; }
+  @media screen and (max-width: 870px) {
+    .teammates__desc {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: left;
+      -webkit-align-items: left;
+      -ms-flex-align: left;
+      align-items: left;
+      width: 100%; } }
   @media screen and (max-width: 768px) {
     .teammates__desc {
       -webkit-box-orient: vertical;
@@ -727,10 +742,8 @@ a {
       margin-top: 0.9375rem; } }
 
 .teammates__foto {
-  width: 25%;
-  height: 25%;
-  max-width: 100px;
-  max-height: 100px;
+  width: 100px;
+  height: 100px;
   margin-left: 0.9375rem; }
 
 .teammates__teampic {
@@ -744,9 +757,13 @@ a {
   line-height: 24px;
   font-family: ubuntulight;
   padding: 0rem 1.25rem; }
+  @media screen and (max-width: 870px) {
+    .teammates__text {
+      width: 100%; } }
   @media screen and (max-width: 768px) {
     .teammates__text {
-      text-align: center; } }
+      text-align: center;
+      width: 66%; } }
   @media screen and (max-width: 480px) {
     .teammates__text {
       width: 90%; } }
@@ -942,9 +959,26 @@ a {
   .opinion__img:hover .opinion__content {
     display: block;
     background-color: rgba(0, 0, 0, 0.5); }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 630px) {
       .opinion__img:hover .opinion__content {
-        display: none; } }
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 1.5625rem; } }
   .opinion__img_2 {
     background-image: url("../IMG6/2x2.png");
     background-size: cover;
@@ -953,9 +987,26 @@ a {
   .opinion__img:hover .opinion__content {
     display: block;
     background-color: rgba(0, 0, 0, 0.5); }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 630px) {
       .opinion__img:hover .opinion__content {
-        display: none; } }
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 1.5625rem; } }
   .opinion__img_3 {
     background-image: url("../IMG6/3x2.png");
     background-size: cover;
@@ -964,9 +1015,26 @@ a {
   .opinion__img:hover .opinion__content {
     display: block;
     background-color: rgba(0, 0, 0, 0.5); }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 630px) {
       .opinion__img:hover .opinion__content {
-        display: none; } }
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 1.5625rem; } }
   .opinion__img_4 {
     background-image: url("../IMG6/4x2.png");
     background-size: cover;
@@ -975,9 +1043,26 @@ a {
   .opinion__img:hover .opinion__content {
     display: block;
     background-color: rgba(0, 0, 0, 0.5); }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 630px) {
       .opinion__img:hover .opinion__content {
-        display: none; } }
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 1.5625rem; } }
   .opinion__img_5 {
     background-image: url("../IMG6/5x2.png");
     background-size: cover;
@@ -986,9 +1071,26 @@ a {
   .opinion__img:hover .opinion__content {
     display: block;
     background-color: rgba(0, 0, 0, 0.5); }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 630px) {
       .opinion__img:hover .opinion__content {
-        display: none; } }
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 1.5625rem; } }
   .opinion__img_6 {
     background-image: url("../IMG6/6x2.png");
     background-size: cover;
@@ -997,9 +1099,26 @@ a {
   .opinion__img:hover .opinion__content {
     display: block;
     background-color: rgba(0, 0, 0, 0.5); }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 630px) {
       .opinion__img:hover .opinion__content {
-        display: none; } }
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 1.5625rem; } }
   .opinion__img_7 {
     background-image: url("../IMG6/7x2.png");
     background-size: cover;
@@ -1008,9 +1127,26 @@ a {
   .opinion__img:hover .opinion__content {
     display: block;
     background-color: rgba(0, 0, 0, 0.5); }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 630px) {
       .opinion__img:hover .opinion__content {
-        display: none; } }
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 1.5625rem; } }
   .opinion__img_8 {
     background-image: url("../IMG6/8x2.png");
     background-size: cover;
@@ -1019,9 +1155,26 @@ a {
   .opinion__img:hover .opinion__content {
     display: block;
     background-color: rgba(0, 0, 0, 0.5); }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 630px) {
       .opinion__img:hover .opinion__content {
-        display: none; } }
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 1.5625rem; } }
   @media screen and (max-width: 768px) {
     .opinion__img {
       width: 50%;
@@ -1039,19 +1192,33 @@ a {
   display: none; }
   @media screen and (max-width: 768px) {
     .opinion__content {
-      text-align: center; } }
+      text-align: center;
+      padding-top: 1.5625rem; } }
 
 .opinion__title {
   font-family: gagalinregular;
-  font-size: 0.875rem; }
+  font-size: 14px; }
+  @media screen and (max-width: 768px) {
+    .opinion__title {
+      margin: 0; } }
+  @media screen and (max-width: 630px) {
+    .opinion__title {
+      font-size: 24px;
+      font-weight: 400; } }
 
 .opinion__text {
   margin-top: 1.5625rem;
   line-height: 167%;
   font-family: ubuntulight;
-  font-size: 0.875rem; }
+  font-size: 14px; }
+  @media screen and (max-width: 768px) {
+    .opinion__text {
+      margin: 0; } }
+  @media screen and (max-width: 630px) {
+    .opinion__text {
+      display: none; } }
 
-.opinion_btn {
+.opinion__btn {
   background-color: #2f3234;
   border: none;
   border-radius: 5px;
@@ -1063,14 +1230,25 @@ a {
   color: #ffffff;
   line-height: 1;
   width: 6.875rem;
-  font-size: 0.8125rem;
+  font-size: 13px;
   padding-top: 0.625rem;
   margin-top: 0.9375rem; }
-  .opinion_btn:hover {
+  .opinion__btn:hover {
     background-color: #1f2122; }
   @media screen and (max-width: 768px) {
-    .opinion_btn {
-      display: inline-block; } }
+    .opinion__btn {
+      display: inline-block;
+      margin-top: 0.3125rem; } }
+  @media screen and (max-width: 630px) {
+    .opinion__btn {
+      display: none; } }
+  .opinion__btn_more {
+    display: none; }
+    @media screen and (max-width: 630px) {
+      .opinion__btn_more {
+        display: inline-block;
+        margin-top: 0.9375rem;
+        width: 80%; } }
 
 .order {
   background: url("../IMG7/order-texture.png") no-repeat center center, #000000 url("../IMG7/order-bg.png") no-repeat center center;
@@ -1104,7 +1282,7 @@ a {
       font-size: 50px;
       text-align: center;
       margin-top: 2.8125rem;
-      width: 50%;
+      width: 70%;
       margin-bottom: 1.25rem; } }
 
 .orderform {
@@ -1302,18 +1480,18 @@ a {
   .footer__left {
     width: 50%;
     text-align: left; }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 630px) {
       .footer__left {
         width: 100%;
         text-align: center; } }
   .footer__right {
     width: 50%;
     text-align: right; }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 630px) {
       .footer__right {
         width: 100%;
         text-align: center; } }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 630px) {
     .footer {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;

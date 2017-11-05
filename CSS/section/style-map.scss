@@ -22,7 +22,7 @@
         width: 50%;
         text-align: left;
 
-        @include phones {
+        @include transit2 {
             width: 100%;
             text-align: center;
         }
@@ -33,13 +33,13 @@
         width: 50%;
         text-align: right;
 
-        @include phones {
+        @include transit2 {
             width: 100%;
             text-align: center;
         }
     }
 
-    @include phones {
+    @include transit2 {
         flex-direction: column;
         height: 115px;
     }

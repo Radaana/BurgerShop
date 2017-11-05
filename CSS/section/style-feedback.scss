@@ -32,9 +32,13 @@
             display: block;
             background-color: rgba(#000000, 0.5);
             
-                    @include phones {
-                        display: none;
-                    }
+                @include transit2 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top: rem(25px);
+                }
             }
         }
     }
@@ -58,29 +62,53 @@
 
     @include tablets {
         text-align: center;
+        padding-top: rem(25px);
     }
+
+    
+
 
 
 }
 
 .opinion__title {
     font-family: gagalinregular;
-    font-size: rem(14px);
+    font-size: 14px;
+
+    @include tablets {
+        margin: 0;
+    }
+
+    @include transit2 {
+        font-size: 24px;
+        font-weight: 400;
+    }
 }
 
 .opinion__text {
     margin-top: rem(25px);
     line-height: 167%;
     font-family: ubuntulight;
-    font-size: rem(14px);
+    font-size: 14px;
+
+    @include tablets {
+        margin: 0;
+    }
+
+    @include transit2 {
+        display: none;
+    }
 } 
 
-.opinion_btn {
+.opinion__btn {
     @include btn(#2f3234);
     width: rem(110px);
-    font-size: rem(13px);
+    font-size: 13px;
     padding-top: rem(10px);
     margin-top: rem(15px);
+
+
+
 
     &:hover {
         background-color: #1f2122;
@@ -88,5 +116,22 @@
 
     @include tablets {
         display: inline-block;
+        margin-top: rem(5px);
     }
+
+    @include transit2 {
+        display: none;
+    }
+
+    &_more {
+        display: none;
+
+        @include transit2 {
+            display: inline-block;
+            margin-top: rem(15px);
+            width: 80%;
+        }
+    }
+
+
 }

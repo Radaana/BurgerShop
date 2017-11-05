@@ -9,10 +9,6 @@
 .order-bg {
     justify-content: flex-start;
     width: 99%;
-    // @include phones {
-    //     align-items: center;
-    //     justify-content: center;
-    // }
 }
 
 .order__title {
@@ -32,7 +28,7 @@
         font-size: 50px;
         text-align: center;
         margin-top: rem(45px);
-        width: 50%;
+        width: 70%;
         margin-bottom: rem(20px);
     }
 }
