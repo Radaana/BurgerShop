@@ -7,8 +7,9 @@
 }
 
 .order-bg {
-    justify-content: flex-start;
-    width: 99%;
+    // justify-content: flex-start;
+    justify-content: center;
+    width: 95%;
 }
 
 .order__title {
@@ -17,15 +18,21 @@
     padding: 0;
     margin: 0;
     margin-bottom: rem(60px);
+    // margin-bottom: rem(40px);
+    // margin-bottom: auto;
+
     margin-top: rem(65px);
+    /* margin-top: auto; */
 
     @include tablets {
-        margin-top: rem(110px);
+        // margin-top: rem(110px);
         text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     @include phones {
-        font-size: 50px;
+        font-size: rem(50px);
         text-align: center;
         margin-top: rem(45px);
         width: 70%;
@@ -34,18 +41,18 @@
 }
 
 .orderform {
-    width: 86%;
+    width: 100%;
     max-width: rem(950px);
     display: flex;
     color: #ffffff;
     font-family: ubuntulight;
-    font-size: 14px;
+    font-size: rem(14px);
     display: flex;
 
     @include tablets {
         flex-direction: column;
         padding: 0 rem(80px);
-        margin-top: rem(20px);
+        // margin-top: rem(20px);
     }
 
     @include phones {
@@ -74,12 +81,13 @@
         @include tablets {
         width: 100%;
         align-items: left;
+        margin-bottom: rem(20px);
         }
 
         @include phones {
         width: 100%;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: rem(20px);
         }
     }
 }
@@ -116,12 +124,10 @@
     border: none;
     border-radius: 5px;
     padding: 5px;
-    
     }
 
 .orderform__textarea {
     width: 100%;
-    // max-width: rem(460px);
     min-height: 110px;
     height: 45%;
     border-radius: rem(5px);

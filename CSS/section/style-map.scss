@@ -7,9 +7,14 @@
     color: #ffffff;
 }
 
+.map-title {
+    position: absolute;
+    left: rem(-9999px);
+
+}
+
 .footer {
     position: absolute;
-    // top: 100%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -41,7 +46,7 @@
 
     @include transit2 {
         flex-direction: column;
-        height: 115px;
+        height: rem(115px);
     }
 }
 
@@ -54,8 +59,8 @@
 }
 
 .address__place {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14px);
+    line-height: rem(24px);
     font-family: ubuntulight;
     font-style: normal;
 }

@@ -46,7 +46,7 @@
     }
 
     @include phones {
-        font-size: 50px;
+        font-size: rem(50px);
         margin-top: rem(65px);
     }
 }
@@ -77,7 +77,7 @@
     margin: 0;
     display: inline-block;
     font-family: gagalinregular;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 400;
     color: #ffffff;
 
@@ -96,14 +96,14 @@
     }
 
     @include tablets {
-        font-size: 24px;
-        line-height: 28px;
+        font-size: rem(24px);
+        line-height: rem(28px);
         padding: rem(20px) rem(0px);
     }
 
     @include tablets {
-        font-size: 24px;
-        line-height: 28px;
+        font-size: rem(24px);
+        line-height: rem(28px);
         padding: rem(15px) rem(0px);
     }
 }
@@ -146,8 +146,8 @@
 .teammates__text {
     width: 66%;
     color: #ffffff;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14px);
+    line-height: rem(24px);
     font-family: ubuntulight;
     padding: rem(0px) rem(20px);
 
@@ -168,7 +168,7 @@
 .teammates__job {
     margin: 0;
     font-family: ubuntubold;
-    font-size: 14px;
+    font-size: rem(14px);
 
     @include tablets {
         text-align: center;

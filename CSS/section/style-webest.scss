@@ -35,7 +35,7 @@
         margin-top: rem(55px);
 
         @include phones {
-            font-size: 50px;
+            font-size: rem(50px);
         }
     }
 
@@ -53,7 +53,6 @@
     margin: rem(0px) rem(90px);
     justify-content: space-between;
     align-items: baseline;
-    // justify-content: flex-start;
 
     @include tablets {
         margin: rem(100px) rem(30px);
@@ -68,7 +67,6 @@
 }
 
 .bestpoint {
-    // max-width: rem(285px);
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -84,7 +82,7 @@
         flex-direction: row;
         justify-content: flex-start;
         width: 100%;
-        min-width: 100px;
+        min-width: rem(100px);
         margin-left: 0;
         align-items: stretch;
         margin-bottom: rem(50px);
@@ -101,20 +99,20 @@
         margin: 0 auto;
 
         &_meat {
-        width: 97px;
-        height: 89px;
+        width: rem(97px);
+        height: rem(89px);
         fill: #e25028;
         }
 
         &_hand {
-        width: 73px;
-        height: 85px;
+        width: rem(73px);
+        height: rem(85px);
         fill: #f8b43a;
         }
 
         &_natural {
-        width: 88px;
-        height: 75px;
+        width: rem(88px);
+        height: rem(75px);
         fill: #8ac03e;
         }
     
@@ -123,7 +121,6 @@
     }
 
     @include phones {
-        // width: 40%;
         width: rem(150px);
         margin: 0;
         margin-right: rem(20px);
@@ -147,22 +144,19 @@
 .bestpoint__title {
         margin: 0;
         font-family: lifehackmedium;
-        font-size: 24px;
+        font-size: rem(24px);
         color: #2f3234;
-        line-height: 28px;
+        line-height: rem(28px);
 }
 
 .bestpoint__text {
 
     p { 
         font-family: ubuntulight;
-        font-size: 14px;
+        font-size: rem(14px);
         color: #6d6d6c
         }
 
-    // @include phones {
-        
-    // }
 }
 
 

@@ -54,7 +54,8 @@
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    
+    position: relative;
+
     @each $namebg in meateaters, vegans, diet {
         &_#{$namebg} {
             background:#000000 url('../IMG5/#{$namebg}.png') no-repeat center center;
@@ -70,22 +71,29 @@
 .menu__name {
     display: block;
     margin: 0;
+    position: absolute;
+    left: rem(-137px);
+    top: 50%;
     transform: rotate(-90deg);
     font-family: gagalinregular;
-    font-size: 40px;
+    font-size: rem(40px);
     font-weight: 400;
     color: #ffffff;
-    width: 350px;
-    height: 83px;
+    width: rem(350px);
     line-height: 1;
-    padding-top: rem(25px);
     text-align: center;
 
     @include tablets {
         vertical-align: middle;
         text-align: left;
-        margin-bottom: rem(180px);
-        padding-top: rem(18px);
+        top: initial;
+        bottom: rem(200px);
+        left: rem(-137px);
+    }
+
+    @include phones {
+        bottom: rem(190px);
+        left: rem(-130px);
     }
 }
 

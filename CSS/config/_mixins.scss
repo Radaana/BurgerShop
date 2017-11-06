@@ -7,9 +7,11 @@
 
 
 @mixin btn($bgcolor) {
+    display: inline-block;
     background-color: $bgcolor;
     border: none;
     border-radius: 5px;
+    height: rem(35px);
     text-align: center;
     vertical-align: middle;
     padding: 10px 16px;
