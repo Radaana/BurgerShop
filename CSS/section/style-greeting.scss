@@ -12,8 +12,11 @@
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
     height: rem(81px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
 
     &__left {
         margin-left: rem(77px);
@@ -150,15 +153,16 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    flex-grow: 1;
+    // flex-grow: 1;
     padding-bottom: 15%;
+    padding-top: rem(81px);
 
     @include tablets {
         flex-direction: column;
         align-items: center;
         text-align: center;
         justify-content: center;
-        padding: 0 10%;
+        padding: rem(81px) 10% 15%;
     }
 }
 
@@ -175,11 +179,11 @@
         }
     
     @include tablets {
-        width: 87%;
+        width: 90%;
         padding: 0 rem(20px);
         margin-left: 0;
         margin-bottom: rem(30px);
-        height: 40%;
+        // height: 40%;
     }
 }
 
@@ -204,7 +208,7 @@
     @include tablets {
         width: 100%;
         padding: 0;
-        height: 30%;
+        // height: 30%;
         align-items: center;
         margin-right: 0;
     }
@@ -231,7 +235,7 @@
 
             @include tablets {
                 margin-top: rem(-45px);
-                margin-bottom: rem(60px);
+                // margin-bottom: rem(60px);
             }
     }
 }
