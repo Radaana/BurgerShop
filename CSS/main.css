@@ -140,6 +140,9 @@ a {
   height: 100%;
   width: 100%; }
 
+.greet-bg {
+  position: relative; }
+
 .header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1561,7 +1564,7 @@ a {
       opacity: 1; }
 
 .dots {
-  position: absolute;
+  position: fixed;
   top: 97px;
   right: 37px; }
 
