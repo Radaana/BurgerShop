@@ -420,6 +420,60 @@ a {
   height: 100%;
   fill: #ffffff; }
 
+.fullscreen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(47, 50, 52, 0.95);
+  z-index: 100;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s; }
+  .fullscreen_shown {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+
+.fullscreen__wrapper {
+  position: relative; }
+
+.fullscreen__close {
+  width: 1.25rem;
+  height: 1.25rem; }
+
+.fullscreen__list {
+  text-align: center; }
+
+.fullscreen__item {
+  padding: 1.875rem 0;
+  position: relative; }
+  .fullscreen__item:after {
+    display: inline-block;
+    content: ' ';
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 50%;
+    bottom: 0; }
+  .fullscreen__item:last-child:after {
+    display: none; }
+
+.fullscreen__link {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: ubunturegular;
+  padding: 1.875rem 0; }
+
 .webest {
   background: url(../IMG2/cheese-dip.png) no-repeat left 1.5625rem, url(../IMG2/seeds.png) no-repeat left 11.875rem, url(../IMG2/tomato-slices.png) no-repeat 3.5rem bottom, url(../IMG2/tomato.png) no-repeat right bottom, url(../IMG2/cheese-lists.png) no-repeat right bottom, url(../IMG2/lettuce.png) no-repeat right 3.3125rem, url(../IMG2/wood.png) no-repeat;
   background-size: auto,auto,auto,auto,auto,auto, cover;
@@ -635,6 +689,9 @@ a {
   color: #f9b43b;
   font-weight: 400;
   margin: 4.0625rem 0rem 2.875rem 4.8125rem; }
+  @media screen and (max-width: 870px) {
+    .teammates__title {
+      margin-left: 2.1875rem; } }
   @media screen and (max-width: 768px) {
     .teammates__title {
       margin-left: 0;
@@ -1479,7 +1536,7 @@ a {
   font-size: 0.875rem;
   margin-left: 0.9375rem; }
 
-.map-bg {
+.map {
   background: #000000 url("../IMG8/map-bg.png") no-repeat center center;
   background-size: cover;
   position: relative;
@@ -1491,18 +1548,34 @@ a {
   position: absolute;
   left: -624.9375rem; }
 
-.footer {
+.footer-bg {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   height: 3.75rem;
   background-color: #0f0f0f;
-  padding: 0.625rem 1.25rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  @media screen and (max-width: 630px) {
+    .footer-bg {
+      height: 7.1875rem; } }
+
+.footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  height: 3.75rem;
+  padding: 0.625rem 1.25rem; }
   .footer__left {
     width: 50%;
     text-align: left; }

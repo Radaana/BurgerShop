@@ -49,7 +49,7 @@
                         </div>
                         <div class="header__right">
                             <a href="#" data-scroll-to="6" class="order-btn">Заказать</a>
-                            <a class="hamburger-menu" href="#">
+                            <a class="hamburger-menu" href="#" id="hamburger-menu">
                                 <div class="hamburger-menu__bars"></div>
                             </a>
                         </div>
@@ -69,10 +69,37 @@
                             <a href="#" class="arrow__link">
                                 <svg class="arrow__icon">
                                     <use xlink:href="CSS/sprite/sprite.svg#arrow-scroll"/>
-                                </svg></a>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                    <div class="fullscreen" id="fullscreen">
+                        <div class="container fullscreen__wrapper">
+                            <div class="header">
+                                <div class="logo header__left">
+                                    <a href="#" class="logo__link"><img src="IMG/logo.svg" alt="Mr.Burger" title="Mr.Burger" class="logo__pic" width="92" height="69"></a>
+                                </div>
+
+                                <div class="fullscreen__close header__right">
+                                    <a href="#" class="close__link" id="close"><img src="IMG/close.svg" alt="close"></a>
+                                </div>
+                            </div>
+
+                            <ul class="fullscreen__list">
+                                <li class="fullscreen__item"><a href="#" class="fullscreen__link">Почему мы</a></li>
+                                <li class="fullscreen__item"><a href="#" class="fullscreen__link">Меню</a></li>
+                                <li class="fullscreen__item"><a href="#" class="fullscreen__link">Советы</a></li>
+                                <li class="fullscreen__item"><a href="#" class="fullscreen__link">Кто мы</a></li>
+                                <li class="fullscreen__item"><a href="#" class="fullscreen__link">Свяжитесь с нами</a></li>
+                                <li class="fullscreen__item"><a href="#" class="fullscreen__link">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                
             </section>
             
             <section class="section webest">
@@ -403,33 +430,33 @@
             </section>
 
             <section class="section map">
-                <div class="map-bg">
                     <h2 class="map-title">Карта ресторанов</h2>
-                    <footer class="footer">
-                        <div class="footer__left">
-                            <address class="address">
-                                <span class="address__place">Санкт-Петербург, ул.Бабушкина, д.12/1, 15 </span><br>
-                                <span class="address__phone">+7 (812) 377-13-77</span>
-                            </address>
-                        </div>
-                        <div class="footer__right">
-                            <div class="socials">
-                                <a href="#" class="socials__link"><svg  width="23px" height="13px" class="socials__item">
-                                        <use xlink:href="CSS/sprite/sprite.svg#vk"/>
-                                </svg></a>
-                                <a href="#" class="socials__link"><svg  width="20px" height="20px" class="socials__item">
-                                        <use xlink:href="CSS/sprite/sprite.svg#fb"/>
-                                </svg></a>
-                                <a href="#" class="socials__link"><svg  width="20px" height="20px" class="socials__item">
-                                        <use xlink:href="CSS/sprite/sprite.svg#inst"/>
-                                </svg></a>
-                                <a href="#" class="socials__link"><svg  width="20px" height="16px" class="socials__item">
-                                        <use xlink:href="CSS/sprite/sprite.svg#twitter"/>
-                                </svg></a>
+                    <footer class="footer-bg">
+                        <div class="footer">
+                            <div class="footer__left">
+                                <address class="address">
+                                    <span class="address__place">Санкт-Петербург, ул.Бабушкина, д.12/1, 15 </span><br>
+                                    <span class="address__phone">+7 (812) 377-13-77</span>
+                                </address>
+                            </div>
+                            <div class="footer__right">
+                                <div class="socials">
+                                    <a href="#" class="socials__link"><svg  width="23px" height="13px" class="socials__item">
+                                            <use xlink:href="CSS/sprite/sprite.svg#vk"/>
+                                    </svg></a>
+                                    <a href="#" class="socials__link"><svg  width="20px" height="20px" class="socials__item">
+                                            <use xlink:href="CSS/sprite/sprite.svg#fb"/>
+                                    </svg></a>
+                                    <a href="#" class="socials__link"><svg  width="20px" height="20px" class="socials__item">
+                                            <use xlink:href="CSS/sprite/sprite.svg#inst"/>
+                                    </svg></a>
+                                    <a href="#" class="socials__link"><svg  width="20px" height="16px" class="socials__item">
+                                            <use xlink:href="CSS/sprite/sprite.svg#twitter"/>
+                                    </svg></a>
+                                </div>
                             </div>
                         </div>
                     </footer>
-                </div>
             </section>
             
             <aside  class="dots">
@@ -446,5 +473,7 @@
             </aside>
         </div>
     </div>
+
+    <script src="Scripts/Fullsize-menu.js"></script>
 </body>
 </html>

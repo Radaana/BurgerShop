@@ -30,7 +30,6 @@
     @include tablets {
         left: 0;
         align-items: center;
-        // justify-content: center;
     }
 }
 
@@ -39,6 +38,10 @@
     @include gagalin(#f9b43b);
     font-weight: 400;
     margin: rem(65px) rem(0px) rem(46px) rem(77px);
+
+    @include transit {
+        margin-left: rem(35px);
+    }
 
     @include tablets {
         margin-left: 0;

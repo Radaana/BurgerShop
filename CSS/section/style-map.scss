@@ -1,4 +1,4 @@
-.map-bg {
+.map {
     background: #000000 url("../IMG8/map-bg.png") no-repeat center center;
     background-size: cover;
     position: relative;
@@ -7,21 +7,38 @@
     color: #ffffff;
 }
 
+// .map-bg {
+//     position: relative;
+// }
+
 .map-title {
     position: absolute;
     left: rem(-9999px);
 
 }
 
-.footer {
+.footer-bg {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     height: rem(60px);
     background-color: #0f0f0f;
-    padding: rem(10px) rem(20px);
+    
     display: flex;
+    justify-content: center;
+
+    @include transit2 {
+        height: rem(115px);
+    }
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    height: rem(60px);
+    padding: rem(10px) rem(20px);
 
     &__left {
         width: 50%;
