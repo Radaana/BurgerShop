@@ -1,0 +1,155 @@
+.slider-bg {
+    background-image: linear-gradient(to bottom, 
+        #f9b43b, #eb8e38 50%, #f9b43b);
+}
+
+.slider {
+    flex-direction: row;
+}
+
+.slider__main {
+    display: flex;
+    align-items: center;
+    height: 60%;
+    position: relative;
+}
+
+.slider__image {
+    max-width: rem(505px);
+    max-height: rem(329px);
+    width: 50%;
+    // margin-left: rem(95px);
+    /* margin-top: rem(5px); */
+    flex-shrink: 1;
+    
+}
+
+.slider__composition {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(#e35028, 0.4);
+    border-radius: 5px;
+    width: rem(90px);
+    height: rem(90px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.slider__burger {
+    width: rem(46px);
+    height: rem(44px);
+    fill: #ffffff;
+    margin-top: rem(15px);
+
+    &:after {   
+        content: 'состав';
+        color: #ffffff;
+        font-size: rem(14px);
+        font-family: gagalinregular;
+        font-weight: 400;
+        text-align: center;
+        display: block;
+        // margin-top: rem(-8px);
+    }
+}
+
+.slider__kcal {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slider__kettlebell {
+    width: rem(60px);
+    height: rem(60px);
+    fill: #ffffff;
+    margin-top: rem(15px);
+    position: relative;
+
+    &:after {   
+        content: 'ккал';
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size: rem(14px);
+        font-family: gagalinregular;
+        font-weight: 400;
+        text-align: center;
+        display: block;
+    }
+}
+
+.slider__amount {
+    position: absolute;
+    left: 25%;
+    top: 55%;
+    color: #ffffff;
+    font-size: rem(20px);
+    font-family: gagalinregular;
+    font-weight: 400;
+}
+
+
+.slider__kcalicon,.slider__burgericon, .slider__img {
+    height: 100%;
+    width: 100%;
+}
+
+.slider__content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.slider__title {
+    @include gagalin(#ffffff);
+    line-height: rem(64px);
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+.slider__desc {
+    font-size: rem(14px);
+    line-height: rem(24px);
+    font-family: ubuntulight;
+    color: #ffffff;
+}
+
+.slider__bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.slider__price{
+    @include gagalin(#e35028);
+    line-height: rem(64px);
+    margin-right: rem(30px);
+
+    &:after {
+        content: 'рублей';
+        font-family: gagalinregular;
+        font-size: rem(30px);
+        font-weight: 400;
+        color: #e35028;
+    }
+}
+
+
+.arrow {
+    &__left {
+        transform: rotate(90deg);
+    }
+    
+    &__right {
+        transform: rotate(-90deg);
+    }
+}
+
