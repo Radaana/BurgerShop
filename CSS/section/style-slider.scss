@@ -11,7 +11,6 @@
 .slider__left, .slider__right {
     minwidth: rem(29px);
     position: absolute;
-    // height: rem(14px);
 }
 
 .slider__left {
@@ -53,7 +52,6 @@
     
     @include tablets {
         width: 80%;
-        // height: 50%;
     }
 }
 
@@ -68,6 +66,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    &_active {
+        background-color: #e35028;
+        transition: background-color 0.1s;
+    }
 }
 
 .slider__burger {
@@ -84,7 +87,94 @@
         font-weight: 400;
         text-align: center;
         display: block;
-        // margin-top: rem(-8px);
+    }
+}
+
+.slider__products {
+    position: absolute;
+    top: 0;
+    left: rem(90px);
+    width: rem(270px);
+    height: rem(330px);
+    background-color: rgba(#ffffff, 0.8);
+    border-radius: rem(5px);
+    transform: scale(0);
+    transition: transform 0.5s;
+    transform-origin: 0% 0%;
+
+    &_shown {
+        transform: scale(1);
+    }
+
+    @include tablets {
+        display: flex;
+        width: rem(320px);
+    }
+}
+
+.slider__close {
+    display: none;
+
+        @include tablets {
+            display: block;
+            padding-top: rem(10px);
+            padding-left: rem(10px);
+
+    }
+}
+
+
+.slider__table {
+    display: table;
+    width: rem(270px);
+}
+
+.slider__tablerow {
+    height: rem(55px);
+    display: table-row;
+}
+
+.slider__tablecell {
+    display: table-cell;
+    vertical-align: middle;
+    
+    &_img {
+        padding-left: rem(20px);
+    }
+
+    &_icon {
+        width: rem(50px);
+        height: rem(50px);
+        padding: rem(5px);
+        display: inline-block;
+        text-align: center;
+    }
+
+
+    &_weight {
+        text-align: right;
+        padding-right: rem(20px);
+        font-family: ubuntulight;
+    }
+}
+
+.slider__prodicon {
+    height: 100%;
+    width: 100%;
+
+    &_beef, 
+    &_sauce {
+        fill: #e25028;
+    }
+
+    &_buns,
+    &_cheese {
+        fill: #f8b43a;
+    }
+
+    &_salad,
+    &_cucumber {
+        fill: #8ac03e;
     }
 }
 

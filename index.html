@@ -161,13 +161,93 @@
 
                     <div class="slider__main">
 
-                        <a href="#" class="slider__button"><div class="slider__composition">
+                        <a href="#" class="slider__button" id="slider__button"><div class="slider__composition" id="slider__composition">
                             <div class="slider__burger">
                                 <svg class="slider__burgericon">
                                     <use xlink:href="CSS/sprite/sprite.svg#burger"/>
                                 </svg>
                             </div>
                         </div></a>
+                        
+                        <div class="slider__products" id="slider__products">
+                            <div class="slider__table">
+                                <div class="slider__tablerow">
+                                        <div class="slider__tablecell slider__tablecell_img">
+                                            <div class="slider__tablecell_icon">
+                                                <svg class="slider__prodicon slider__prodicon_beef">
+                                                    <use xlink:href="CSS/sprite/sprite.svg#beef"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="slider__tablecell slider__tablecell_product">Говядина</div>
+                                        <div class="slider__tablecell slider__tablecell_weight">300 г</div>
+                                </div>
+
+                                <div class="slider__tablerow">
+                                        <div class="slider__tablecell slider__tablecell_img">
+                                            <div class="slider__tablecell_icon">
+                                                <svg class="slider__prodicon slider__prodicon_buns" >
+                                                    <use xlink:href="CSS/sprite/sprite.svg#buns"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="slider__tablecell slider__tablecell_product">Булочки</div>
+                                        <div class="slider__tablecell slider__tablecell_weight">100 г</div>
+                                </div>
+
+                                <div class="slider__tablerow">
+                                        <div class="slider__tablecell slider__tablecell_img">
+                                            <div class="slider__tablecell_icon">
+                                                <svg class="slider__prodicon slider__prodicon_salad">
+                                                    <use xlink:href="CSS/sprite/sprite.svg#salad"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="slider__tablecell slider__tablecell_product">Зелень</div>
+                                        <div class="slider__tablecell slider__tablecell_weight">70 г</div>
+                                </div>
+
+                                <div class="slider__tablerow">
+                                        <div class="slider__tablecell slider__tablecell_img">
+                                            <div class="slider__tablecell_icon">
+                                                <svg class="slider__prodicon slider__prodicon_sauce">
+                                                    <use xlink:href="CSS/sprite/sprite.svg#sauce"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="slider__tablecell slider__tablecell_product">Соус</div>
+                                        <div class="slider__tablecell slider__tablecell_weight">150 г</div>
+                                </div>
+
+                                <div class="slider__tablerow">
+                                        <div class="slider__tablecell slider__tablecell_img">
+                                            <div class="slider__tablecell_icon">
+                                                <svg class="slider__prodicon slider__prodicon_cucumber">
+                                                    <use xlink:href="CSS/sprite/sprite.svg#cucumber"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="slider__tablecell slider__tablecell_product">Овощи</div>
+                                        <div class="slider__tablecell slider__tablecell_weight">200 г</div>
+                                </div>
+
+                                <div class="slider__tablerow">
+                                        <div class="slider__tablecell slider__tablecell_img">
+                                            <div class="slider__tablecell_icon">
+                                                <svg class="slider__prodicon slider__prodicon_cheese">
+                                                    <use xlink:href="CSS/sprite/sprite.svg#cheese"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="slider__tablecell slider__tablecell_product">Сыр</div>
+                                        <div class="slider__tablecell slider__tablecell_weight">80 г</div>
+                                </div>
+                            </div>
+                            
+                            <div class="slider__close">
+                                    <a href="#" class="close__link close__link_slider" id="slider__close"><img src="IMG3/slider-close.svg" alt="close"></a>
+                            </div>
+                        </div>
 
                         <div class="slider__kcal">
                             <div class="slider__kettlebell">
@@ -527,6 +607,7 @@
         </div>
     </div>
 
-    <script src="Scripts/Fullsize-menu.js"></script>
+    <script src="Scripts/greeting-fullsizeMenu.js"></script>
+    <script src="Scripts/slider-products.js"></script>
 </body>
 </html>

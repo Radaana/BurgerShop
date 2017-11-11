@@ -733,6 +733,11 @@ a {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
+  .slider__composition_active {
+    background-color: #e35028;
+    -webkit-transition: background-color 0.1s;
+    -o-transition: background-color 0.1s;
+    transition: background-color 0.1s; }
 
 .slider__burger {
   width: 2.875rem;
@@ -747,6 +752,79 @@ a {
     font-weight: 400;
     text-align: center;
     display: block; }
+
+.slider__products {
+  position: absolute;
+  top: 0;
+  left: 5.625rem;
+  width: 16.875rem;
+  height: 20.625rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.3125rem;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  transform-origin: 0% 0%; }
+  .slider__products_shown {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+  @media screen and (max-width: 768px) {
+    .slider__products {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 20rem; } }
+
+.slider__close {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .slider__close {
+      display: block;
+      padding-top: 0.625rem;
+      padding-left: 0.625rem; } }
+
+.slider__table {
+  display: table;
+  width: 16.875rem; }
+
+.slider__tablerow {
+  height: 3.4375rem;
+  display: table-row; }
+
+.slider__tablecell {
+  display: table-cell;
+  vertical-align: middle; }
+  .slider__tablecell_img {
+    padding-left: 1.25rem; }
+  .slider__tablecell_icon {
+    width: 3.125rem;
+    height: 3.125rem;
+    padding: 0.3125rem;
+    display: inline-block;
+    text-align: center; }
+  .slider__tablecell_weight {
+    text-align: right;
+    padding-right: 1.25rem;
+    font-family: ubuntulight; }
+
+.slider__prodicon {
+  height: 100%;
+  width: 100%; }
+  .slider__prodicon_beef, .slider__prodicon_sauce {
+    fill: #e25028; }
+  .slider__prodicon_buns, .slider__prodicon_cheese {
+    fill: #f8b43a; }
+  .slider__prodicon_salad, .slider__prodicon_cucumber {
+    fill: #8ac03e; }
 
 .slider__kcal {
   position: absolute;
