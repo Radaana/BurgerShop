@@ -34,7 +34,7 @@
         margin-bottom: rem(60px);
         margin-top: rem(55px);
 
-        @include phones {
+        @include transit2 {
             font-size: rem(50px);
         }
     }
@@ -43,7 +43,7 @@
         margin-top: rem(55px);
     }
 
-    @include phones {
+    @include transit2 {
         margin-top: rem(0px);
     }
 }
@@ -58,7 +58,7 @@
         margin: rem(100px) rem(30px);
     }
 
-    @include phones {
+    @include transit2 {
         flex-direction: column;
         justify-content: flex-start;
         flex-wrap: wrap;
@@ -78,7 +78,7 @@
         margin-left: rem(10px);
     }
     
-    @include phones {
+    @include transit2 {
         flex-direction: row;
         justify-content: flex-start;
         width: 100%;
@@ -120,7 +120,7 @@
         margin-bottom: rem(25px);
     }
 
-    @include phones {
+    @include transit2 {
         width: rem(150px);
         margin: 0;
         margin-right: rem(20px);
@@ -135,7 +135,7 @@
 .bestpoint__content {
     text-align: center;
 
-    @include phones {
+    @include transit2 {
         text-align: left;
         width: 70%;
     }

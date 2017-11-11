@@ -5,23 +5,56 @@
 
 .slider {
     flex-direction: row;
+    position: relative;
 }
+
+.slider__left, .slider__right {
+    minwidth: rem(29px);
+    position: absolute;
+    // height: rem(14px);
+}
+
+.slider__left {
+    left: 0;
+    top: 50%;
+}
+
+.slider__right {
+    right: 0;
+    top: 50%;
+}
+
 
 .slider__main {
     display: flex;
     align-items: center;
     height: 60%;
     position: relative;
+
+    @include tablets {
+        height: 80%;
+        width: 80%;
+        padding: 0 rem(20px);
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        @include transit2 {
+        width: 100%;
+        height: 95%;
+    }
 }
 
 .slider__image {
     max-width: rem(505px);
     max-height: rem(329px);
     width: 50%;
-    // margin-left: rem(95px);
-    /* margin-top: rem(5px); */
     flex-shrink: 1;
     
+    @include tablets {
+        width: 80%;
+        // height: 50%;
+    }
 }
 
 .slider__composition {
@@ -36,8 +69,6 @@
     align-items: center;
     flex-direction: column;
 }
-
-
 
 .slider__burger {
     width: rem(46px);
@@ -64,6 +95,13 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+
+        @include tablets {
+        bottom: initial;
+        top: 0;
+        left: initial;
+        right: 0;
+    }
 }
 
 .slider__kettlebell {
@@ -105,6 +143,12 @@
     display: flex;
     flex-direction: column;
     width: 50%;
+
+    @include tablets {
+        width: 100%;
+        align-items: center;
+        // height: 50%;
+    }
 }
 
 .slider__title {
@@ -113,6 +157,10 @@
     padding: 0;
     margin: 0;
     font-weight: 400;
+
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .slider__desc {
@@ -120,18 +168,39 @@
     line-height: rem(24px);
     font-family: ubuntulight;
     color: #ffffff;
+    padding-right: rem(29px);
+
+    @include tablets {
+        padding-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    @include phones {
+        margin-bottom: rem(25px);
+    }
 }
 
 .slider__bottom {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+
+    @include phones {
+        align-items: flex-end;
+    }
 }
 
 .slider__price{
     @include gagalin(#e35028);
-    line-height: rem(64px);
+    // line-height: rem(64px);
+    margin: 0;
     margin-right: rem(30px);
+    padding: 0;
+
+    @include phones {
+        line-height: 2rem;
+    }
 
     &:after {
         content: 'рублей';

@@ -2,6 +2,10 @@
     position: fixed;
     top: 97px;
     right: 37px;
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .dots__list {
