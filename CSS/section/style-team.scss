@@ -114,10 +114,14 @@
 .teammates__desc{
     display: flex;
     height: rem(0px);
-    transform: scale(0);
-    transform-origin: 50% 0%;
-    transition: transform 0.5s;
+    // transform: scale(0);
+    // transform-origin: 50% 0%;
+    // transition: transform 0.5s;
     overflow: hidden;
+    // display: none;
+    // height: 23%;
+    // min-height: rem(120px);
+    // transition: 3s linear;
 
     @include transit {
         flex-direction: column;
@@ -193,7 +197,7 @@
     +.teammates__desc {
         height: 23%;
         min-height: rem(120px);
-        transform: scale(1);
-        overflow: visible;
+    //     // transform: scale(1);
+    //     overflow: visible;
     }
 }

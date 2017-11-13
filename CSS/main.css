@@ -1101,17 +1101,6 @@ a {
   display: -ms-flexbox;
   display: flex;
   height: 0rem;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transform-origin: 50% 0%;
-  -ms-transform-origin: 50% 0%;
-  transform-origin: 50% 0%;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  -o-transition: transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
   overflow: hidden; }
   @media screen and (max-width: 870px) {
     .teammates__desc {
@@ -1185,11 +1174,7 @@ a {
 
 .teammates__trigger_active + .teammates__desc {
   height: 23%;
-  min-height: 7.5rem;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  overflow: visible; }
+  min-height: 7.5rem; }
 
 .menu-bg {
   background: #000000 url("../IMG5/menu-bg.png") no-repeat 35% center;
