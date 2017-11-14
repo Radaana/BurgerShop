@@ -1,5 +1,6 @@
 .feedbacks {
     background-color: #000000;
+    position: relative;
 }
 
 .opinion-container {
@@ -121,6 +122,57 @@
             width: 80%;
         }
     }
+}
 
+.modal-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(#2f3234, 0.95);
+    z-index: 10;
 
+    cursor:pointer;
+
+    display: none;
+}
+
+.modal {
+    background: #ffffff;
+    width: 90%;
+
+    border-radius: 5px;
+
+    position: fixed;
+    top: 35%; 
+    left: 5%; 
+    z-index: 15;
+    
+    padding: rem(30px) rem(20px);
+    opacity: 0;
+
+    display: none;
+}
+
+.modal__close {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.modal__title {
+    font-size: 14px;
+    font-family: gagalinregular;
+    color: #2f3234;
+    padding: 0;
+    margin: 0;
+}
+
+.modal__text {
+    font-size: 14px;
+    font-family: ubuntulight;
+    color: #2f3234;
+    padding: 0;
+    line-height: 24px;
 }
