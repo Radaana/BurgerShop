@@ -1085,7 +1085,10 @@ a {
     border: 4.5px solid transparent;
     border-top-color: #f9b43b;
     border-bottom-width: 0rem;
-    margin-right: 0.5625rem; }
+    margin-right: 0.5625rem;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
   @media screen and (max-width: 768px) {
     .teammates__name {
       font-size: 1.5rem;
@@ -1097,13 +1100,18 @@ a {
       line-height: 1.75rem;
       padding: 0.9375rem 0rem; } }
 
+.teammates__container {
+  height: 0rem;
+  overflow: hidden;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+
 .teammates__desc {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  height: 0rem;
-  overflow: hidden; }
+  display: flex; }
   @media screen and (max-width: 870px) {
     .teammates__desc {
       -webkit-box-orient: vertical;
@@ -1298,30 +1306,31 @@ a {
       bottom: 11.875rem;
       left: -8.125rem; } }
 
+.menu__container {
+  width: 0rem;
+  overflow: hidden;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  background-color: rgba(0, 0, 0, 0.8); }
+
 .menu__desc {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 0;
   color: #ffffff;
   font-size: 0.875rem;
   line-height: 1.5rem;
   font-family: ubuntulight;
-  width: 0rem;
-  overflow: hidden; }
+  padding: 3.75rem 2.1875rem;
+  display: none; }
 
 .menu__trigger_active .menu__name {
   color: #ffffff; }
   @media screen and (max-width: 768px) {
     .menu__trigger_active .menu__name {
       color: #f9b43b; } }
-
-.menu__trigger_active + .menu__desc {
-  min-width: 6.25rem;
-  width: auto;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  padding: 3.75rem 2.1875rem; }
 
 .feedbacks {
   background-color: #000000;

@@ -1,28 +1,34 @@
 $(document).ready(function() {
     let teamClass = 'teammates__trigger_active';
 
-
-
     $('.teammates__trigger').on('click', function(e) {
         e.preventDefault();
 
         let $this = $(this);
         let $teamLinks = $('.teammates__trigger');
-        let content = $this.closest('.teammates__desc');
-        let otherContent =$('.teammates__desc');
-        let $teamDesc = $('.teammates__desc');
+        let item = $this.closest('.teammates__item');
+        let container = item.find('.teammates__container');
+        let otherContainers =$('.teammates__container');
+        let desc = $('.teammates__desc', container);
+        let reqHeight = desc.outerHeight();
 
-        // console.log($this);
         if (!$this.hasClass(teamClass)) {
            $teamLinks.removeClass(teamClass); 
-           $(this).addClass(teamClass);
+           $this.addClass(teamClass);
 
-           // otherContent.stop().slideUp(300);
-           // content.stop().slideDown(300);
+           otherContainers.css({
+            'height': 0
+          });
+
+            container.css({
+              'height': reqHeight
+            });
+
         } else {
-
-        //     content.stop().slideUp(300);
             $this.removeClass(teamClass);
+            container.css({
+              'height' : 0
+            });
         }
     }); //click END
 }); //ready END

@@ -96,6 +96,7 @@
         border-top-color: #f9b43b;
         border-bottom-width: rem(0px);
         margin-right: rem(9px);
+        transition: .5s;
     }
 
     @include tablets {
@@ -111,17 +112,16 @@
     }
 }
 
+.teammates__container {
+    height: rem(0px);
+    overflow: hidden;
+    transition: .5s;
+}
+
 .teammates__desc{
     display: flex;
-    height: rem(0px);
-    // transform: scale(0);
-    // transform-origin: 50% 0%;
-    // transition: transform 0.5s;
-    overflow: hidden;
-    // display: none;
     // height: 23%;
-    // min-height: rem(120px);
-    // transition: 3s linear;
+        // min-height: rem(120px);
 
     @include transit {
         flex-direction: column;
@@ -140,8 +140,6 @@
 }
 
 .teammates__foto {
-    // width: 25%;
-    // height: 25%;
     width: 100px;
     height: 100px;
     margin-left: rem(15px);
@@ -197,7 +195,5 @@
     +.teammates__desc {
         height: 23%;
         min-height: rem(120px);
-    //     // transform: scale(1);
-    //     overflow: visible;
     }
 }
