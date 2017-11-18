@@ -7,8 +7,6 @@ $('.slider__button').on('click', e => {
     let main = $this.closest('.slider__main');
     let products = $('.slider__products', main);
 
-    console.log(products);
-
     composition.toggleClass('slider__composition_active');
     products.toggleClass('slider__products_shown');
     

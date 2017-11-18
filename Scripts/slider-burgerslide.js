@@ -8,6 +8,7 @@ $(document).ready(function() {
         let items = container.find('.slider__main');
         let activeSlide = items.filter('.slider__main-active');
         let existedItem, edgeItem, reqItem;
+        items.first().removeClass('slider__main-first');
 
         if ($this.hasClass('slider__arrow-right')) {
             existedItem = activeSlide.next();
@@ -34,9 +35,12 @@ $(document).ready(function() {
         let activeSlide = items.filter('.slider__main-active');
         let reqItem = $(items[reqIndex]);
 
+
         if (reqIndex >= 0) {
             activeSlide.removeClass('slider__main-active');
-            reqItem.addClass('slider__main-active');
+            reqItem.addClass('slider__main-active').animate({'opacity' : 1 }, 300);
+            // activeSlide.animate({'opacity' : 0 },400 , () => {activeSlide.removeClass('slider__main-active')});
+            // reqItem.animate({'opacity' : 1 }, 400 , () => {reqItem.addClass('slider__main-active')});
         }
     }
 
