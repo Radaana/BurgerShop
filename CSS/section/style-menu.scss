@@ -101,32 +101,17 @@
     overflow: hidden;
     transition: .5s;
     flex-grow: 2;
-    // display: flex;
     background-color: rgba(#000000, 0.8);
 }
 
 .menu__desc {
-    // background-color: rgba(#000000, 0.8);
-    // padding: 0;
     color: #ffffff;
     font-size: rem(14px);
     line-height: rem(24px);
     font-family: ubuntulight;
-
-    // min-width: rem(100px);
-    // min-width: rem(200px);
-    // width: 40vw;
-    // width: 100%;
-    // flex-grow: 1;
     padding: rem(60px) rem(35px);
     display: none;
-    // @include tablets { 
-    //     width: 55vw;
-    // }
 
-    // p {
-    //     width: 100%;
-    // }
 }
 
 .menu__trigger_active {
@@ -138,18 +123,5 @@
         }
     }
 
-    // + .menu__desc {
-    //     min-width: rem(100px);
-    //     width: 100%;
-    //     flex-grow: 1;
-    //     padding: rem(60px) rem(35px);
-    // }
-
-    // + .menu__container {
-    //     min-width: rem(100px);
-    //     width: 100%;
-    //     flex-grow: 1;
-    //     padding: rem(60px) rem(35px);
-    // }
 
 }

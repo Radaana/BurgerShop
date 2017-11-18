@@ -3,7 +3,7 @@
                 url("../IMG/texture.png") no-repeat center center,
                 #000000 url("../IMG/video-bg.png") no-repeat center center;
     background-size: cover, cover;
-    position: relative;
+    // position: relative;
     height: 100%;
     width: 100%;
 
@@ -127,6 +127,11 @@
 
     @include tablets {
         display: flex;
+    }
+
+    &-active {
+        transform: rotate(360deg) scale(0);
+        transition: 0.5s;
     }
 }
 

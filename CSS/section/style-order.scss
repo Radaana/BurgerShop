@@ -7,7 +7,6 @@
 }
 
 .order-bg {
-    // justify-content: flex-start;
     justify-content: center;
     width: 95%;
 }
@@ -18,14 +17,10 @@
     padding: 0;
     margin: 0;
     margin-bottom: rem(60px);
-    // margin-bottom: rem(40px);
-    // margin-bottom: auto;
-
     margin-top: rem(65px);
-    /* margin-top: auto; */
+
 
     @include tablets {
-        // margin-top: rem(110px);
         text-align: center;
         margin-top: auto;
         margin-bottom: auto;
@@ -52,7 +47,6 @@
     @include tablets {
         flex-direction: column;
         padding: 0 rem(80px);
-        // margin-top: rem(20px);
     }
 
     @include phones {
@@ -156,8 +150,6 @@
         border-radius: 50%;
         margin-right: rem(5px);
     }
-
-    
 }
 
 .orderform__switch_radio,
