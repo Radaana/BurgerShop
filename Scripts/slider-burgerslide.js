@@ -37,8 +37,9 @@ $(document).ready(function() {
 
 
         if (reqIndex >= 0) {
-            activeSlide.removeClass('slider__main-active');
-            reqItem.addClass('slider__main-active').animate({'opacity' : 1 }, 300);
+            activeSlide.animate({'opacity' : 0 },250 , () => {activeSlide.removeClass('slider__main-active')});
+            // activeSlide.removeClass('slider__main-active').css({'opacity' : 0 });
+            reqItem.addClass('slider__main-active').animate({'opacity' : 1 }, 500);
             // activeSlide.animate({'opacity' : 0 },400 , () => {activeSlide.removeClass('slider__main-active')});
             // reqItem.animate({'opacity' : 1 }, 400 , () => {reqItem.addClass('slider__main-active')});
         }

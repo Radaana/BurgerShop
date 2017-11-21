@@ -70,7 +70,7 @@
 
                     <div class="arrowbox">
                         <div class="arrow">
-                            <a href="#" class="arrow__link">
+                            <a href="#" class="arrow__link" data-scroll-to="1">
                                 <svg class="arrow__icon">
                                     <use xlink:href="CSS/sprite/sprite.svg#arrow-scroll"/>
                                 </svg>
@@ -92,12 +92,12 @@
                             </div>
 
                             <ul class="fullscreen__list">
-                                <li class="fullscreen__item"><a href="#" class="fullscreen__link">Почему мы</a></li>
-                                <li class="fullscreen__item"><a href="#" class="fullscreen__link">Меню</a></li>
-                                <li class="fullscreen__item"><a href="#" class="fullscreen__link">Советы</a></li>
-                                <li class="fullscreen__item"><a href="#" class="fullscreen__link">Кто мы</a></li>
-                                <li class="fullscreen__item"><a href="#" class="fullscreen__link">Свяжитесь с нами</a></li>
-                                <li class="fullscreen__item"><a href="#" class="fullscreen__link">Контакты</a></li>
+                                <li class="fullscreen__item"><a href="#" class="fullscreen__link" data-scroll-to="1">Почему мы</a></li>
+                                <li class="fullscreen__item"><a href="#" class="fullscreen__link" data-scroll-to="4">Меню</a></li>
+                                <li class="fullscreen__item"><a href="#" class="fullscreen__link" data-scroll-to="2">Советы</a></li>
+                                <li class="fullscreen__item"><a href="#" class="fullscreen__link" data-scroll-to="3">Кто мы</a></li>
+                                <li class="fullscreen__item"><a href="#" class="fullscreen__link" data-scroll-to="6">Свяжитесь с нами</a></li>
+                                <li class="fullscreen__item"><a href="#" class="fullscreen__link" data-scroll-to="7">Контакты</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1106,23 +1106,27 @@
             </section>
         </div> 
 
-<!--                 <aside  class="dots">
+                <aside  class="dots">
                     <ul class="dots__list">
-                        <li class="dots__item dots__item_active"><a href="#"></a></li>
-                        <li class="dots__item"><a href="#"></a></li>
-                        <li class="dots__item"><a href="#"></a></li>
-                        <li class="dots__item"><a href="#"></a></li>
-                        <li class="dots__item"><a href="#"></a></li>
-                        <li class="dots__item"><a href="#"></a></li>
-                        <li class="dots__item"><a href="#"></a></li>
-                        <li class="dots__item"><a href="#"></a></li>
+                        <li class="dots__item"><a class="dots__link  dots__link_active" href="#" data-scroll-to="0"></a></li>
+                        <li class="dots__item "><a class="dots__link" href="#" data-scroll-to="1"></a></li>
+                        <li class="dots__item"><a class="dots__link" href="#" data-scroll-to="2"></a></li>
+                        <li class="dots__item"><a class="dots__link" href="#" data-scroll-to="3"></a></li>
+                        <li class="dots__item"><a class="dots__link" href="#" data-scroll-to="4"></a></li>
+                        <li class="dots__item"><a class="dots__link" href="#" data-scroll-to="5"></a></li>
+                        <li class="dots__item"><a class="dots__link" href="#" data-scroll-to="6"></a></li>
+                        <li class="dots__item"><a class="dots__link" href="#" data-scroll-to="7"></a></li>
                     </ul>
-                </aside> -->
+                </aside>
     </div>
 
     <script src="Scripts/jquery-3.2.1.min.js"></script>
     <!-- <script src="onepagescroll/jquery.onepage-scroll.min.js"></script> -->
     <!-- <script src="onepagescroll/onepagescroll-setup.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+    <script src="Scripts/onepagescroll.js"></script>
 
 
     <script src="Scripts/greeting-fullsizeMenu.js"></script>

@@ -12,21 +12,61 @@
     margin-left: 30px;
 }
 
-.dots__item {
-    @include circle(5px, #ffffff);
-    margin-bottom: 16px;
-    position: relative; 
+.dots__link {
+    width: rem(16px);
+    height: rem(16px);
+    display: block;
+    position: relative;
 
-
-    &:first-child::after {
+    &:after, &:before {
         content: "";
-        background-color: transparent;
-        border: 1px solid white;
-        width: 14px;
-        height: 14px;
-        border-radius: 50%;
+        display: block;
         position: absolute;
-        right: -4px;
-        top: -5px;
-    } 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+    }
+
+    &:after {
+        width: rem(5px);
+        height: rem(5px);
+        background: #ffffff;
+        // top: 50%;
+        // left: 50%;
+    }
+
+    &:before {
+        width: rem(0px);
+        height: rem(0px);
+        // width: rem(14px);
+        // height: rem(14px);
+        // border-radius: 50%;
+        border: rem(1px) solid #ffffff;
+        opacity: 0;
+        // transform: scale(0);
+        transition: 0.3s;
+    }
+
+    &:hover {
+        &:before {
+            width: rem(14px);
+            height: rem(14px);
+            opacity: 1;
+            // transform: scale(1);
+        }
+    }
+
+    &_active {
+        &:before {
+            width: rem(14px);
+            height: rem(14px);
+            opacity: 1;
+            // transform: scale(1);
+        }
+    }
+}
+
+.dots__item {
+    margin-bottom: rem(5px);
 }
