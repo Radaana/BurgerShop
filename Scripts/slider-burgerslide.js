@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('.slider__arrow').on('click', function(e) {
+    $('.slider__arrow').on('click touchstart', function(e) {
         e.preventDefault();
 
         let $this = $(this);

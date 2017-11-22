@@ -65,6 +65,10 @@
     @include tablets {
         justify-content: flex-start;
     }
+
+    // @include phones {
+    //     width: rem(60px);
+    // }
 }
 
 .menu__name {

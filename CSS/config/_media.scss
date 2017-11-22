@@ -26,3 +26,9 @@
         @content;
     }
 }
+
+@mixin transit3 {
+    @media screen and (max-width: $transit3) {
+        @content;
+    }
+}

@@ -1,7 +1,7 @@
 $(document).ready(function() {
     let teamClass = 'teammates__trigger_active';
 
-    $('.teammates__trigger').on('click', function(e) {
+    $('.teammates__trigger').on('click touchstart', function(e) {
         e.preventDefault();
 
         let $this = $(this);

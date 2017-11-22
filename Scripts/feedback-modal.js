@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.opinion__btn').click( function(e){ 
+    $('.opinion__btn').on('click touchstart', function(e){ 
         e.preventDefault(); 
         $('.modal-bg').fadeIn(400, 
             function(){ 
@@ -9,7 +9,7 @@ $(document).ready(function() {
         });
     });
     
-    $('#modal_close, .modal-bg').click( function(e){ 
+    $('#modal_close, .modal-bg').on('click touchstart', function(e){ 
         e.preventDefault();
         $('.modal').animate({opacity: 0, top: '35%'}, 200,  
                 function(){ 

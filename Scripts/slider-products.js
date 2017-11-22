@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-$('.slider__button').on('click', e => {
+$('.slider__button').on('click touchstart', e => {
     e.preventDefault();
     let $this = $(e.currentTarget);
     let composition = $('.slider__composition', $this);
@@ -12,7 +12,7 @@ $('.slider__button').on('click', e => {
     
     }); //click END
 
-$('.close__link_slider').on('click', e => {
+$('.slider__close').on('click touchstart', e => {
     e.preventDefault();
     let $this = $(e.currentTarget);
     let main = $this.closest('.slider__main');
@@ -22,6 +22,7 @@ $('.close__link_slider').on('click', e => {
     composition.toggleClass('slider__composition_active');
     products.toggleClass('slider__products_shown');
 
+    console.log($this);
     }); //click END
 
 }); //ready END

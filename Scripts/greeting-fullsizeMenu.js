@@ -2,13 +2,13 @@ $(document).ready(function() {
         let fullscreen = $('#fullscreen');
         let ham = $('#hamburger-menu');
 
-    ham.on('click', e =>{
+    ham.on('click touchstart', e =>{
         e.preventDefault();
         fullscreen.addClass('fullscreen_shown');
         ham.addClass('hamburger-menu-active');
     }); //click END
 
-    $('#close').on('click', e =>{
+    $('#close').on('click touchstart', e =>{
         e.preventDefault();
         fullscreen.removeClass('fullscreen_shown');
         ham.removeClass('hamburger-menu-active');

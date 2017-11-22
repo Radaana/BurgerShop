@@ -1,7 +1,7 @@
 $(document).ready(function() {
     let menuClass = 'menu__trigger_active';
 
-    $('.menu__trigger').on('click', function(e) {
+    $('.menu__trigger').on('click touchstart', function(e) {
         e.preventDefault();
 
         let $this = $(this);

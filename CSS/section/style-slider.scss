@@ -128,14 +128,26 @@
     transform: scale(0);
     transition: transform 0.5s;
     transform-origin: 0% 0%;
+    z-index: 1000;
+
+    // &:hover {
+    //     transform: scale(1);
+    // }
+
 
     &_shown {
         transform: scale(1);
     }
 
+
     @include tablets {
         display: flex;
         width: rem(320px);
+    }
+
+    @include transit3 {
+        top: rem(90px);
+        left: 0;
     }
 }
 
@@ -144,9 +156,10 @@
 
         @include tablets {
             display: block;
+            position: relative;
             padding-top: rem(10px);
             padding-left: rem(10px);
-            z-index: 100;
+            z-index: 1000;
 
     }
 }
