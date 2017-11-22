@@ -1916,6 +1916,10 @@ a {
   min-height: 110px;
   height: 45%;
   border-radius: 0.3125rem; }
+  @media screen and (max-width: 360px) {
+    .orderform__textarea {
+      height: 25%;
+      min-height: 80px; } }
 
 .orderform__switch {
   display: none; }

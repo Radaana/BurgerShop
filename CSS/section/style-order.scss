@@ -126,8 +126,9 @@
     height: 45%;
     border-radius: rem(5px);
 
-    @include phones {
-
+    @include transit3 {
+        height: 25%;
+        min-height: 80px;
     }
 }
 
