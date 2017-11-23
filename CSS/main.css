@@ -1779,7 +1779,8 @@ a {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 95%; }
+  width: 95%;
+  position: relative; }
 
 .order__title {
   font-family: gagalinregular;
@@ -1979,6 +1980,55 @@ a {
   font-family: ubuntulight;
   font-size: 0.875rem;
   margin-left: 0.9375rem; }
+
+.form__modal-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  cursor: pointer;
+  display: none; }
+
+.form__modal {
+  background: #ffffff;
+  width: 15rem;
+  height: 8.75rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  margin-left: -6.875rem;
+  z-index: 15;
+  vertical-align: center;
+  text-align: center;
+  padding: 0.625rem 1.25rem;
+  opacity: 0;
+  display: none; }
+
+.modal__text_success, .modal__text_fail {
+  display: inline-block; }
+
+.form__close {
+  display: inline-block;
+  background-color: #e45028;
+  border: none;
+  border-radius: 5px;
+  min-height: 2.1875rem;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 16px;
+  text-transform: uppercase;
+  font-family: ubuntumedium;
+  color: #ffffff;
+  line-height: 1;
+  cursor: pointer;
+  font-size: 0.8125rem; }
+  .form__close a {
+    color: #ffffff; }
 
 .map {
   background: #000000 url("../IMG8/map-bg.png") no-repeat center center;

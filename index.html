@@ -6,7 +6,6 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
-    <!-- <link rel="stylesheet" type="text/css" href="onepagescroll/onepage-scroll.css"/> -->
     <link rel="stylesheet"  href="CSS/main.css">
 
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
@@ -997,40 +996,40 @@
             <section class="order section">
                 <div class=" container order-bg">
                     <h2 class="order__title"> Закажите доставку</h2>
-                    <form action="order.php" method="post" class="orderform">
+                    <form action="order.php" method="post" class="orderform" id="orderform">
                         <div class="orderform__left">
                             <div class="orderform__row">
                                 <div class="orderform__item">
                                     <label for="fullname">Имя</label>
-                                    <input type="text" name="fullname" id="fullname" class="orderform__field">
+                                    <input type="text" name="fullname" id="fullname" class="orderform__field" required>
                                 </div>
                                 <div class="orderform__item">
                                     <label for="phone">Телефон</label>
-                                    <input type="text" name="phone" id="phone" class="orderform__field">
+                                    <input type="tel" name="phone" id="phone" class="orderform__field" required>
                                 </div>
                             </div>
                             <div class="orderform__row">
                                 <div class="orderform__item ">
                                     <label for="street">Улица</label>
-                                    <input type="text" name="street" id="street" class="orderform__field">
+                                    <input type="text" name="street" id="street" class="orderform__field" required>
                                 </div>
                             </div>
                             <div class="orderform__row">
                                 <div class="orderform__item">
                                     <label for="housenum">Дом</label>
-                                    <input type="text" name="housenum" id="housenum" class="orderform__field">
+                                    <input type="number" name="housenum" id="housenum" class="orderform__field" required>
                                 </div>
                                 <div class="orderform__item">
                                     <label for="building">Корпус</label>
-                                    <input type="text" name="building" id="building" class="orderform__field">
+                                    <input type="number" name="building" id="building" class="orderform__field">
                                 </div>
                                 <div class="orderform__item">
                                     <label for="flatnum">Квартира</label>
-                                    <input type="text" name="flatnum" id="flatnum" class="orderform__field">
+                                    <input type="number" name="flatnum" id="flatnum" class="orderform__field" required>
                                 </div>
                                 <div class="orderform__item">
                                     <label for="floor">Этаж</label>
-                                    <input type="text" name="floor" id="floor" class="orderform__field">
+                                    <input type="number" name="floor" id="floor" class="orderform__field" required>
                                 </div>
                             </div>
                         </div>
@@ -1041,13 +1040,13 @@
                             </div>
                             <div class="orderform__row">
                                 <label>
-                                    <input class="orderform__switch" type="radio" name="payment" value="change">
+                                    <input class="orderform__switch" type="radio" name="payment" value="Нужна сдача">
                                     <span class="orderform__switch_radio"></span>
                                     <span class="orderform__switch-label">Потребуется сдача</span>
                                 </label>
 
                                 <label>
-                                    <input class="orderform__switch" type="radio" name="payment" value="card" checked>
+                                    <input class="orderform__switch" type="radio" name="payment" value="Оплата картой" checked>
                                     <span class="orderform__switch_radio"></span>
                                     <span class="orderform__switch-label">Оплата по карте</span>
                                 </label>
@@ -1055,7 +1054,7 @@
                             <div class="orderform__row">
 
                                 <label>
-                                    <input class="orderform__switch" type="checkbox" name="checkbox-test" checked>
+                                    <input class="orderform__switch" type="checkbox" id="dont-disturb" name="dont-disturb" value="1" checked>
                                     <span class="orderform__switch_checkbox"></span>
                                     <span class="orderform__switch-label">Не перезванивать</span>
                                 </label>
@@ -1067,6 +1066,21 @@
                             </div>
                         </div>
                     </form>
+
+                    <div class="form__modal-bg">
+                        <div class="form__modal form__modal_success">
+                            <div class="modal__text modal__text_success">
+                                <p>Сообщение отправлено</p>
+                            </div>
+                            <a href="#" class="form__close">Закрыть</a>
+                        </div>
+                        <div class="form__modal form__modal_fail">
+                            <div class="modal__text modal__text_fail">
+                                <p>Произошла ошибка</p>
+                            </div>
+                            <a href="#" class="form__close">Закрыть</a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -1121,8 +1135,6 @@
     </div>
 
     <script src="Scripts/jquery-3.2.1.min.js"></script>
-    <!-- <script src="onepagescroll/jquery.onepage-scroll.min.js"></script> -->
-    <!-- <script src="onepagescroll/onepagescroll-setup.js"></script> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
@@ -1135,6 +1147,7 @@
     <script src="Scripts/team-accordeon.js"></script>
     <script src="Scripts/menu-accordeon.js"></script>
     <script src="Scripts/feedback-modal.js"></script>
+    <script src="Scripts/order-form.js"></script>
     <script src="Scripts/map-yandexMap.js"></script>
 </body>
 </html>
