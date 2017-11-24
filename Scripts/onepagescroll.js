@@ -7,6 +7,9 @@ $(document).ready( function() {
     let mobileDetect = new MobileDetect(window.navigator.userAgent);
     let isMobile = mobileDetect.mobile();
 
+    let fullscreen = $('#fullscreen');
+    let ham = $('#hamburger-menu');
+
 // Функции
 
     function switchDotsClass(sectionNum) {
@@ -27,6 +30,8 @@ $(document).ready( function() {
 
         sections.eq(sectionNum).addClass('section__active')
         .siblings().removeClass('section__active');
+
+        
 
         setTimeout(() => {
             inScroll = false;
@@ -109,6 +114,9 @@ $('[data-scroll-to]').on('click touchstart', e => {
   e.preventDefault();
   let target = $(e.currentTarget);
   let sectionIndex = parseInt(target.attr('data-scroll-to'));
+
+    fullscreen.removeClass('fullscreen_shown'); // fullsize menu
+    ham.removeClass('hamburger-menu-active');//ham ico
 
   performMovingSections(sectionIndex);
 });

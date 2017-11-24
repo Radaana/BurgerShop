@@ -34,6 +34,10 @@ $(document).ready(function() {
                         .animate({opacity: 1, top: '40%'}, 200);
                     });
             }
+
+            request.fail(function(jqXHR, textStatus) {
+                alert("Request failed: " + textStatus);
+            });
         });
     });//submit END
 

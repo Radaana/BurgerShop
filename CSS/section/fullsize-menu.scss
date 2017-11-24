@@ -1,0 +1,59 @@
+.fullscreen {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(#2f3234, 0.95);
+    width: 100%;
+    height: 100%;
+
+    z-index: 10;
+
+    transform: scale(0);
+    transition: transform 0.5s;
+
+    &_shown {
+        transform: scale(1);
+    }
+}
+
+.fullscreen__wrapper {
+    position: relative;
+}
+
+.fullscreen__close {
+    width: rem(20px);
+    height: rem(20px);
+}
+
+.fullscreen__list {
+    text-align: center;
+}
+
+.fullscreen__item {
+    padding: rem(30px) 0; 
+    position: relative;
+
+    &:after {
+        display: inline-block;
+        content: ' ';
+        @include circle(5px, #ffffff);
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+    }
+    
+    &:last-child:after {
+        display: none;
+    }
+}
+
+.fullscreen__link {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: rem(24px);
+    font-family: ubunturegular;
+    padding: rem(30px) 0; 
+}
+
