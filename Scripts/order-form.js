@@ -7,7 +7,7 @@ $(document).ready(function() {
         let data = form.serialize();
         // console.log(data);
 
-        var request = $.ajax({
+        let request = $.ajax({
             type: 'POST',
             url: url,
             data: data,
@@ -17,6 +17,7 @@ $(document).ready(function() {
         request.done(function(msg) {
             let mes = msg.mes;
             let status = msg.status;
+            
             if (status === 'OK') {
                 console.log('ok');
                 $('.form__modal-bg').fadeIn(400, 
@@ -25,7 +26,8 @@ $(document).ready(function() {
                         .css('display', 'block') 
                         .animate({opacity: 1, top: '40%'}, 200);
                     });
-            } else{
+
+            } else {
                 console.log('not ok');
                 $('.form__modal-bg').fadeIn(400, 
                     function(){ 
@@ -33,12 +35,19 @@ $(document).ready(function() {
                         .css('display', 'block') 
                         .animate({opacity: 1, top: '40%'}, 200);
                     });
-            }
+            };
+        }); // done END
 
-            request.fail(function(jqXHR, textStatus) {
-                alert("Request failed: " + textStatus);
-            });
+        
+        request.fail(function(jqXHR, textStatus) {
+            alert("Request failed: " + textStatus);
         });
+
+        request.always(function() {
+            console.log('aga');
+            form[0].reset();
+        });
+        
     });//submit END
 
     $('.form__close, .form__modal-bg').on('click touchstart', function(e){ 
