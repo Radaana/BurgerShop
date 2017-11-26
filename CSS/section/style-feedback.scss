@@ -61,6 +61,10 @@
     padding: rem(30px) rem(30px) rem(30px) rem(20px);
     display: none;
 
+    @include transit2 {
+        padding: rem(10px);
+    }
+
 }
 
 .opinion__title {
@@ -97,7 +101,7 @@
     @include btn(#2f3234);
     width: rem(110px);
     font-size: rem(13px);
-    padding-top: rem(10px);
+    // padding-top: rem(10px);
     margin-top: rem(15px);
 
     &:hover {

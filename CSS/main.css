@@ -1609,6 +1609,9 @@ a {
   z-index: 3;
   padding: 1.875rem 1.875rem 1.875rem 1.25rem;
   display: none; }
+  @media screen and (max-width: 630px) {
+    .opinion__content {
+      padding: 0.625rem; } }
 
 .opinion__title {
   margin: 0;
@@ -1650,7 +1653,6 @@ a {
   cursor: pointer;
   width: 6.875rem;
   font-size: 0.8125rem;
-  padding-top: 0.625rem;
   margin-top: 0.9375rem; }
   .opinion__btn:hover {
     background-color: #1f2122; }
