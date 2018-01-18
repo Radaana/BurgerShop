@@ -42,6 +42,7 @@ $(document).ready(function() {
         myMap.geoObjects.add(burger3);
         myMap.geoObjects.add(burger4);
 
+        // myMap.behaviors.disable(‘scrollZoom’);
     }
 
 
