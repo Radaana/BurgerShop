@@ -8,5 +8,5 @@ LoftSchool
 https://radaana.github.io/BurgerShop/
 
 CSS3, Flexbox, SVG, адаптивная вёрстка  
-JavaScript, jQuery, имитация сервера на PHP
+JavaScript, jQuery, имитация сервера на PHP    
 SASS , Gulp
