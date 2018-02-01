@@ -1,6 +1,5 @@
 *.config
 prepros*
 *-dist.css
-gulpfile.js
-*.json
+
 /node_modules

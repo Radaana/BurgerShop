@@ -1,0 +1,23 @@
+{
+  "name": "burgershop",
+  "version": "1.0.0",
+  "description": "my first project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Radaana/BurgerShop.git"
+  },
+  "author": "Ekaterina L",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Radaana/BurgerShop/issues"
+  },
+  "homepage": "https://github.com/Radaana/BurgerShop#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat-css": "^2.3.0"
+  }
+}
