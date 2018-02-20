@@ -120,8 +120,6 @@
 
 .teammates__desc{
     display: flex;
-    // height: 23%;
-        // min-height: rem(120px);
 
     @include transit {
         flex-direction: column;
